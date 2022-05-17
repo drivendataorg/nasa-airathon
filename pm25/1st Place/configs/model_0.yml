@@ -1,0 +1,41 @@
+---
+OUTPUT_PATH: 'logs/'
+
+DATA_PRODUCTS:
+  maiac:
+    train_file: 'data/proc/train_maiac.csv'
+    test_file: 'data/proc/test_maiac.csv'
+    drop: [
+      'FineModeFraction_mean', 'FineModeFraction_var'
+    ]
+  misr:
+    train_file: 'data/proc/train_misr.csv'
+    test_file: 'data/proc/test_misr.csv'
+    drop: [
+      'Large_Mode_Aerosol_Optical_Depth_var',
+      'Medium_Mode_Aerosol_Optical_Depth_var', 'Small_Mode_Aerosol_Optical_Depth_var',
+      'Nonspherical_Aerosol_Optical_Depth_var', 'Absorption_Aerosol_Optical_Depth_var',
+      'Angstrom_Exponent_550_860nm_var', 'Aerosol_Optical_Depth_Uncertainty_var',
+      'Latitude_mean', 'Latitude_var', 'Longitude_mean', 'Longitude_var', 'filename',
+    ]
+  gfs:
+    train_file: 'data/proc/train_gfs.csv'
+    test_file: 'data/proc/test_gfs.csv'
+    drop: ['latitude_mean', 'latitude_var', 'longitude_mean', 'longitude_var']
+
+TRAIN_METAFILE: 'data/train_labels.csv'
+TEST_METAFILE: 'data/submission_0.csv'
+GRID_METAFILE: 'data/grid_metadata.csv'
+
+N_FOLDS: 5
+MODEL: 'xgboost'
+XGB_PARAMS:
+  learning_rate: 0.008413060157425385
+  n_estimators: 2600
+  reg_lambda: 19
+  reg_alpha: 75
+  subsample: 0.5
+  colsample_bytree: 0.4
+  max_depth: 5
+  min_child_weight: 6
+  gamma: 0.2635842876184764
