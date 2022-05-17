@@ -51,7 +51,7 @@ Username: sukantabasu
 
 **Notebooks**: Several Jupyter notebooks are included in the **[notebooks](notebooks)** folder. The filename of each notebook starts with a number. As such, the notebooks should be run sequentially. 
 
-**Models**: The LightGBM model is utilized in this hackathon. The pickle package is used to save the model parameters in the **[model](model)** sub-directory. 
+**Models**: The LightGBM model is utilized in this hackathon. The pickle package is used to save the model parameters in the model sub-directory. 
 
 **Forecast**: The **[forecast](forecast)** directory contains both airathon and single day forecasts. 
 
