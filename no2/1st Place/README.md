@@ -7,7 +7,7 @@ Install requirements with `pip install -r requirements.txt`.
 Save the competition data files to the `data_tg` directory. This includes:
 - `grid_metadata.csv`
 - `submission_format.csv`
-- `no2_satellite_metadata_0AF3h09`
+- `no2_satellite_metadata_0AF3h09.csv`
 - `train_labels.csv`
 
 It's recommended to run on c6i.4xlarge or larger AWS instance (i.e. 16+ cores and most importantly, 1Gbps or higher network speed); consider going even higher if aiming to replicate the entire training set.
