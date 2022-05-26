@@ -99,7 +99,7 @@ Run the following three training scripts:
 
 3. `python TrainEnsemble.py`: trains ensemble of the previous two models
 
-	Ensure `all_data_tg.pkl`, `submission_tg.pkl` are in cache, and that the `clfs_tg` and `nn1` directories exist from the previous two steps.
+	Ensure [`all_data_tg.pkl`, `submission_tg.pkl`] are in the `cache` directory, and that the `clfs_tg` and `nn1` directories exist from the previous two steps.
 
 	Predictions will be stored in `submissions_tg/stack1.csv`. 
 
@@ -114,8 +114,8 @@ Then run `python Inference.py` which will output the submissions to `inference_t
 The inference script outputs predictions for two different models. The LightGBM model is faster and simpler but does not generalize as well as the ensembled model.
 ```
 inference_tg/
-	new.csv -> predictions from LightGBM + ElasticNet model
-	stack1.csv -> predictions from ensemble model (LightGBM + ElasticNet and NeuralNet)
+  new.csv  # predictions from LightGBM + ElasticNet model
+  stack1.csv  # predictions from ensemble model (LightGBM + ElasticNet and NeuralNet)
 ```	
 
 Predictions will be output within a few minutes, ~0.999 correlation across runs.
@@ -139,7 +139,7 @@ t = t.dt.floor('1d').dt.tz_localize(None)
 
 #### Tropomi
 
-ibid.
+Ibid.
 
 ```
 df.datetime = pd.to_datetime(df.datetime).dt.tz_convert(tz).dt.floor('1d')
