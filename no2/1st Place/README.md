@@ -72,7 +72,9 @@ Allow an hour for training if running on r6i.4xlarge (16-core / 128 GB) or compa
 
 The features will be cached in `cache/all_data_tg.pkl` and `cache/submission.pkl` for use in neural network training.
 
-A pure LightGBM submission will be saved in `submission_tg/new.csv` [expect 0.470 - 0.471 private leaderboard score, aka slightly winning, and ~0.999 correlation with new.csv provided]
+A pure LightGBM submission will be saved in `submission_tg/new.csv`
+
+Expect 0.470 - 0.471 private leaderboard score, aka slightly winning, and ~0.999 correlation with `new.csv` provided.
 
 OR
 
@@ -82,26 +84,26 @@ Run the following three training scripts:
 
 1. `python Train.py`: trains LightGBM + ElasticNet model
 
-See details above in [LightGBM](#lightgbm-model)
+	See details above in [LightGBM](#lightgbm-model)
 
 2. `python TrainNN.py`: trains neural network 
 
-Ensure `all_data_tg.pkl` and `submission_tg.pkl` are in the `cache directory`.
+	Ensure [`all_data_tg.pkl`, `submission_tg.pkl`] are in the `cache` directory.
 
-All models were trained across hundreds of r6i.large spot instances. Distributed training across systems is supported (>100 aggregate hours is sufficient)
+	All models were trained across hundreds of r6i.large spot instances. Distributed training across systems is supported (>100 aggregate hours is sufficient)
 
-Each fold set is roughly 15 minutes, for ~600 models
-   [3 locations * ~12 parameter choices * 20 fold rotations ]
+	Each fold set is roughly 15 minutes, for ~600 models
+	[3 locations * ~12 parameter choices * 20 fold rotations ]
 
-Expect 150 hours of training time on a single CPU instance (invariant to core count, may be moderately faster on GPU; add 'accelerator="gpu"' to Trainer(...) to enable GPU). 
+	Expect 150 hours of training time on a single CPU instance (invariant to core count, may be moderately faster on GPU; add 'accelerator="gpu"' to Trainer(...) to enable GPU). 
 
 3. `python TrainEnsemble.py`: trains ensemble of the previous two models
 
-Ensure `all_data_tg.pkl`, `submission_tg.pkl` are in cache, and that the `clfs_tg` and `nn1` directories exist from the previous two steps.
+	Ensure `all_data_tg.pkl`, `submission_tg.pkl` are in cache, and that the `clfs_tg` and `nn1` directories exist from the previous two steps.
 
-Predictions will be stored in `submissions_tg/stack1.csv`. 
+	Predictions will be stored in `submissions_tg/stack1.csv`. 
 
-Expect ~0.477 private leaderboard score. ~0.999 correlation between replication runs.
+	Expect ~0.477 private leaderboard score. ~0.999 correlation between replication runs.
 
 ## Out of sample inference
 
