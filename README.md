@@ -5,7 +5,7 @@
 
 ![Banner Image](https://s3.amazonaws.com/drivendata-public-assets/opendri_mon_labeled.jpg)
 
-# <Competition name>
+# NASA Airathon - Trace Gas Track
 
 ## Goal of the Competition
 <Competition summary, usually a paragraph or two from the home page or results blog post>
