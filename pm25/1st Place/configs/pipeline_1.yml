@@ -1,0 +1,82 @@
+---
+OUTPUT_PATH: 'logs/'
+
+DATA_PRODUCTS:
+  maiac:
+    train_file: 'data/proc/train_maiac.csv'
+    test_file: 'data/proc/test_maiac.csv'
+    drop: [
+      'FineModeFraction_mean', 'FineModeFraction_var'
+    ]
+  misr:
+    train_file: 'data/proc/train_misr.csv'
+    test_file: 'data/proc/test_misr.csv'
+    drop: [
+      'Large_Mode_Aerosol_Optical_Depth_var',
+      'Medium_Mode_Aerosol_Optical_Depth_var', 'Small_Mode_Aerosol_Optical_Depth_var',
+      'Nonspherical_Aerosol_Optical_Depth_var', 'Absorption_Aerosol_Optical_Depth_var',
+      'Angstrom_Exponent_550_860nm_var', 'Aerosol_Optical_Depth_Uncertainty_var',
+      'Latitude_mean', 'Latitude_var', 'Longitude_mean', 'Longitude_var', 'filename',
+    ]
+  gfs:
+    train_file: 'data/proc/train_gfs.csv'
+    test_file: 'data/proc/test_gfs.csv'
+    drop: ['latitude_mean', 'latitude_var', 'longitude_mean', 'longitude_var']
+
+TRAIN_METAFILE: 'data/train_labels.csv'
+TEST_METAFILE: 'data/submission_format.csv'
+GRID_METAFILE: 'data/proc/grid_nasadem.csv'
+
+N_FOLDS: 5
+
+FEATURE_SELECTION: False
+FEATURES_THRESHOLD: null
+TOPK_FEATURES: 40
+FS_SAMPLE_PERCENTAGE: 0.5
+FS_MODELS: ['xgb_tuned', 'lgbm_tuned']
+FS_SEEDS: [42]
+
+# MODELS: ['xgb_tuned', 'catb_tuned', 'lgbm_tuned']
+MODELS: ['xgb_tuned', 'catb_tuned', 'lgbm_tuned']
+# SEEDS: [42, 2022, 1680, null]
+SEEDS: [42]
+
+BLENDER: 'linreg'
+BLENDER_SEED: 42
+
+XGB_PARAMS:
+  learning_rate: 0.008413060157425385
+  n_estimators: 2600
+  reg_lambda: 19
+  reg_alpha: 75
+  subsample: 0.5
+  colsample_bytree: 0.4
+  max_depth: 5
+  min_child_weight: 6
+  gamma: 0.2635842876184764
+
+CATB_PARAMS:
+  bootstrap_type: 'Bernoulli'
+  verbose: 0
+  n_estimators: 1129
+  od_wait: 56
+  learning_rate: 0.09715853782392174
+  reg_lambda: 55.75391498204694
+  subsample: 0.9166100705655346
+  random_strength: 12.451033717813278
+  depth: 6
+  min_data_in_leaf: 1
+  leaf_estimation_iterations: 8
+
+LGBM_PARAMS:
+  metric: 'rmse'
+  n_estimators: 6257
+  reg_alpha: 0.818684600659729
+  reg_lambda: 0.8979257130736423
+  colsample_bytree: 0.7
+  subsample: 0.7
+  learning_rate: 0.006
+  max_depth: 2
+  num_leaves: 26 
+  min_child_samples: 19
+  cat_smooth: 16

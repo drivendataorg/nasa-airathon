@@ -1,0 +1,49 @@
+---
+OUTPUT_PATH: 'logs/'
+
+DATA_PRODUCTS:
+  maiac:
+    train_file: 'data/proc/train_maiac.csv'
+    test_file: 'data/proc/test_maiac.csv'
+    drop: [
+      'FineModeFraction_mean', 'FineModeFraction_var', 
+      # 'Injection_Height_mean', 'Injection_Height_var',
+      # 'Optical_Depth_047_var', 'Optical_Depth_055_var'
+    ]
+  misr:
+    train_file: 'data/proc/train_misr.csv'
+    test_file: 'data/proc/test_misr.csv'
+    drop: [
+      'Large_Mode_Aerosol_Optical_Depth_var',
+      'Medium_Mode_Aerosol_Optical_Depth_var', 'Small_Mode_Aerosol_Optical_Depth_var',
+      'Nonspherical_Aerosol_Optical_Depth_var', 'Absorption_Aerosol_Optical_Depth_var',
+      'Angstrom_Exponent_550_860nm_var', 'Aerosol_Optical_Depth_Uncertainty_var',
+      'Latitude_mean', 'Latitude_var', 'Longitude_mean', 'Longitude_var', 'filename',
+      # 'Large_Mode_Aerosol_Optical_Depth_mean', 'Nonspherical_Aerosol_Optical_Depth_mean',
+      # 'Absorption_Aerosol_Optical_Depth_mean', 'Angstrom_Exponent_550_860nm_mean', 
+      # 'Aerosol_Optical_Depth_Uncertainty_mean', 'Aerosol_Optical_Depth_var'
+    ]
+  gfs:
+    train_file: 'data/proc/train_gfs.csv'
+    test_file: 'data/proc/test_gfs.csv'
+    drop: ['latitude_mean', 'latitude_var', 'longitude_mean', 'longitude_var']
+
+TRAIN_METAFILE: 'data/train_labels.csv'
+TEST_METAFILE: 'submission/submission_0.csv'
+GRID_METAFILE: 'data/grid_metadata.csv'
+
+N_FOLDS: 5
+MODEL: 'catboost'
+CATB_PARAMS:
+  # task_type: "GPU"
+  bootstrap_type: 'Bernoulli'
+  verbose: 0
+  n_estimators: 1129
+  od_wait: 56
+  learning_rate: 0.09715853782392174
+  reg_lambda: 55.75391498204694
+  subsample: 0.9166100705655346
+  random_strength: 12.451033717813278
+  depth: 6
+  min_data_in_leaf: 1
+  leaf_estimation_iterations: 8
