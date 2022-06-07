@@ -8,6 +8,8 @@
 # NASA Airathon: Predict Air Quality - Particulate Track
 
 ## Goal of the Competition
+Air pollution is one of the greatest environmental threats to human health. It can result in heart and chronic respiratory illness, cancer, and premature death. Currently, no single satellite instrument provides ready-to-use, high resolution information on surface-level air pollutants. This gap in information means that millions of people cannot take daily action to protect their health.
+
 The goal of this track of the competition was to use remote sensing data and other geospatial data sources to develop models for estimating daily levels of PM2.5 with high spatial resolution. Successful models could provide critical data to help the public take action to reduce their exposure to air pollution.
 
 ## What's in this Repository
