@@ -1,0 +1,3500 @@
+---
+GRID_METAFILE: 'data/proc/grid_nasadem.csv'
+MAIAC_BANDS: ['Optical_Depth_047', 'Optical_Depth_055', 'AOD_Uncertainty', 'Column_WV', 'AOD_QA', 'AOD_MODEL', 'Injection_Height']
+MISR_BANDS: ['Latitude', 'Longitude', 'Aerosol_Optical_Depth', 
+  'Aerosol_Optical_Depth_Uncertainty', 'Angstrom_Exponent_550_860nm', 
+  'Absorption_Aerosol_Optical_Depth',
+  'Nonspherical_Aerosol_Optical_Depth', 'Small_Mode_Aerosol_Optical_Depth',
+  'Medium_Mode_Aerosol_Optical_Depth', 'Large_Mode_Aerosol_Optical_Depth'
+]
+GFS_BANDS: [
+    'Wind speed (gust)', 'Haines Index', 'Surface pressure', 
+    'Orography', 'Temperature', 'Water equivalent of accumulated snow depth (deprecated)', 
+    'Snow depth', 'Percent frozen precipitation', 'Wilting Point', 'Field Capacity',
+    'Sunshine Duration', 'Surface lifted index', 'Convective available potential energy',
+    'Convective inhibition', 'Best (4-layer) lifted index', 'Planetary boundary layer height',
+    'Land-sea mask', 'Sea ice area fraction', 'Land-sea coverage (nearest neighbor) [land=1,sea=0]',
+]
+
+MISR_DROP: [
+  'Large_Mode_Aerosol_Optical_Depth_var',
+  'Medium_Mode_Aerosol_Optical_Depth_var', 'Small_Mode_Aerosol_Optical_Depth_var',
+  'Nonspherical_Aerosol_Optical_Depth_var', 'Absorption_Aerosol_Optical_Depth_var',
+  'Angstrom_Exponent_550_860nm_var', 'Aerosol_Optical_Depth_Uncertainty_var',
+  'Latitude_mean', 'Latitude_var', 'Longitude_mean', 'Longitude_var',
+  # 'Large_Mode_Aerosol_Optical_Depth_mean', 'Nonspherical_Aerosol_Optical_Depth_mean',
+  # 'Absorption_Aerosol_Optical_Depth_mean', 'Angstrom_Exponent_550_860nm_mean', 
+  # 'Aerosol_Optical_Depth_Uncertainty_mean', 'Aerosol_Optical_Depth_var'
+]
+LOCATION_MAP:
+  Taipei: 'tpe'
+  Delhi: 'dl'
+  Los Angeles (SoCAB): 'la'
+
+GRID_WISE_MEAN_IMPUTATION:
+  3S31A:
+          maiac_Optical_Depth_047_mean: 166.7071448416434
+          maiac_Optical_Depth_047_var: 1700.417308668897
+          maiac_Optical_Depth_055_mean: 123.24798908444788
+          maiac_Optical_Depth_055_var: 931.7507588365198
+          maiac_AOD_Uncertainty_mean: 452.35108249000564
+          maiac_AOD_Uncertainty_var: 58565.24309148909
+          maiac_Column_WV_mean: 1410.265534431939
+          maiac_Column_WV_var: 87101.47488293707
+          maiac_AOD_QA_mean: 755.9952506572293
+          maiac_AOD_QA_var: 275367.2177644926
+          maiac_AOD_MODEL_mean: 2.0
+          maiac_AOD_MODEL_var: 0.0
+          maiac_Injection_Height_mean: 1050.3846435546875
+          maiac_Injection_Height_var: 234669.19824320692
+          misr_Aerosol_Optical_Depth_mean: 0.12963815329267694
+          misr_Aerosol_Optical_Depth_var: 0.000899178772704126
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.04377358503110118
+          misr_Angstrom_Exponent_550_860nm_mean: 0.9445688701143452
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.0017888253640586296
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.012996192240583068
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.07470838582216227
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.0099334057589408
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.04499732823951129
+          gfs_Wind speed (gust)_mean: nan
+          gfs_Wind speed (gust)_var: nan
+          gfs_Haines Index_mean: nan
+          gfs_Haines Index_var: nan
+          gfs_Surface pressure_mean: nan
+          gfs_Surface pressure_var: nan
+          gfs_Orography_mean: nan
+          gfs_Orography_var: nan
+          gfs_Temperature_mean: nan
+          gfs_Temperature_var: nan
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: nan
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: nan
+          gfs_Snow depth_mean: nan
+          gfs_Snow depth_var: nan
+          gfs_Percent frozen precipitation_mean: nan
+          gfs_Percent frozen precipitation_var: nan
+          gfs_Wilting Point_mean: nan
+          gfs_Wilting Point_var: nan
+          gfs_Field Capacity_mean: nan
+          gfs_Field Capacity_var: nan
+          gfs_Sunshine Duration_mean: nan
+          gfs_Sunshine Duration_var: nan
+          gfs_Surface lifted index_mean: nan
+          gfs_Surface lifted index_var: nan
+          gfs_Convective available potential energy_mean: nan
+          gfs_Convective available potential energy_var: nan
+          gfs_Convective inhibition_mean: nan
+          gfs_Convective inhibition_var: nan
+          gfs_Best (4-layer) lifted index_mean: nan
+          gfs_Best (4-layer) lifted index_var: nan
+          gfs_Planetary boundary layer height_mean: nan
+          gfs_Planetary boundary layer height_var: nan
+          gfs_Land-sea mask_mean: nan
+          gfs_Land-sea mask_var: nan
+          gfs_Sea ice area fraction_mean: nan
+          gfs_Sea ice area fraction_var: nan
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: nan
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: nan
+          row_nan_count: 48.585482330468004
+  A2FBI:
+          maiac_Optical_Depth_047_mean: 177.67739697705093
+          maiac_Optical_Depth_047_var: 1878.2010810405548
+          maiac_Optical_Depth_055_mean: 131.36234149767824
+          maiac_Optical_Depth_055_var: 1028.990352836737
+          maiac_AOD_Uncertainty_mean: 377.81203468801897
+          maiac_AOD_Uncertainty_var: 38665.29959469801
+          maiac_Column_WV_mean: 1249.9435452521136
+          maiac_Column_WV_var: 71822.40723329749
+          maiac_AOD_QA_mean: 725.2542876736553
+          maiac_AOD_QA_var: 289333.54886283044
+          maiac_AOD_MODEL_mean: 2.0
+          maiac_AOD_MODEL_var: 0.0
+          maiac_Injection_Height_mean: 896.0271118164062
+          maiac_Injection_Height_var: 30135.345439737117
+          misr_Aerosol_Optical_Depth_mean: 0.12986841655912848
+          misr_Aerosol_Optical_Depth_var: 0.0012898713453096792
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.04766093974467363
+          misr_Angstrom_Exponent_550_860nm_mean: 0.9097702834932577
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.001696550313682462
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.008861623485461743
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.0665482898032115
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.009442788042243936
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.05387862459853442
+          gfs_Wind speed (gust)_mean: nan
+          gfs_Wind speed (gust)_var: nan
+          gfs_Haines Index_mean: nan
+          gfs_Haines Index_var: nan
+          gfs_Surface pressure_mean: nan
+          gfs_Surface pressure_var: nan
+          gfs_Orography_mean: nan
+          gfs_Orography_var: nan
+          gfs_Temperature_mean: nan
+          gfs_Temperature_var: nan
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: nan
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: nan
+          gfs_Snow depth_mean: nan
+          gfs_Snow depth_var: nan
+          gfs_Percent frozen precipitation_mean: nan
+          gfs_Percent frozen precipitation_var: nan
+          gfs_Wilting Point_mean: nan
+          gfs_Wilting Point_var: nan
+          gfs_Field Capacity_mean: nan
+          gfs_Field Capacity_var: nan
+          gfs_Sunshine Duration_mean: nan
+          gfs_Sunshine Duration_var: nan
+          gfs_Surface lifted index_mean: nan
+          gfs_Surface lifted index_var: nan
+          gfs_Convective available potential energy_mean: nan
+          gfs_Convective available potential energy_var: nan
+          gfs_Convective inhibition_mean: nan
+          gfs_Convective inhibition_var: nan
+          gfs_Best (4-layer) lifted index_mean: nan
+          gfs_Best (4-layer) lifted index_var: nan
+          gfs_Planetary boundary layer height_mean: nan
+          gfs_Planetary boundary layer height_var: nan
+          gfs_Land-sea mask_mean: nan
+          gfs_Land-sea mask_var: nan
+          gfs_Sea ice area fraction_mean: nan
+          gfs_Sea ice area fraction_var: nan
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: nan
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: nan
+          row_nan_count: 47.391891891891895
+  DJN0F:
+          maiac_Optical_Depth_047_mean: 160.20103217134573
+          maiac_Optical_Depth_047_var: 1631.013759761856
+          maiac_Optical_Depth_055_mean: 118.43955818571226
+          maiac_Optical_Depth_055_var: 893.3584218217005
+          maiac_AOD_Uncertainty_mean: 398.22207776588897
+          maiac_AOD_Uncertainty_var: 44853.069143996
+          maiac_Column_WV_mean: 1173.9193895326914
+          maiac_Column_WV_var: 68680.41301819307
+          maiac_AOD_QA_mean: 790.0670492884467
+          maiac_AOD_QA_var: 320102.14718182513
+          maiac_AOD_MODEL_mean: 2.0
+          maiac_AOD_MODEL_var: 0.0
+          maiac_Injection_Height_mean: 1188.526416015625
+          maiac_Injection_Height_var: 35625.76766552204
+          misr_Aerosol_Optical_Depth_mean: 0.13485757576011528
+          misr_Aerosol_Optical_Depth_var: 0.0012643243087311767
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.04985911810967188
+          misr_Angstrom_Exponent_550_860nm_mean: 0.8399029756011676
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.0019065725196174223
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.013880966179161748
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.06268105473388076
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.009276410201786685
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.06290151575935916
+          gfs_Wind speed (gust)_mean: nan
+          gfs_Wind speed (gust)_var: nan
+          gfs_Haines Index_mean: nan
+          gfs_Haines Index_var: nan
+          gfs_Surface pressure_mean: nan
+          gfs_Surface pressure_var: nan
+          gfs_Orography_mean: nan
+          gfs_Orography_var: nan
+          gfs_Temperature_mean: nan
+          gfs_Temperature_var: nan
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: nan
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: nan
+          gfs_Snow depth_mean: nan
+          gfs_Snow depth_var: nan
+          gfs_Percent frozen precipitation_mean: nan
+          gfs_Percent frozen precipitation_var: nan
+          gfs_Wilting Point_mean: nan
+          gfs_Wilting Point_var: nan
+          gfs_Field Capacity_mean: nan
+          gfs_Field Capacity_var: nan
+          gfs_Sunshine Duration_mean: nan
+          gfs_Sunshine Duration_var: nan
+          gfs_Surface lifted index_mean: nan
+          gfs_Surface lifted index_var: nan
+          gfs_Convective available potential energy_mean: nan
+          gfs_Convective available potential energy_var: nan
+          gfs_Convective inhibition_mean: nan
+          gfs_Convective inhibition_var: nan
+          gfs_Best (4-layer) lifted index_mean: nan
+          gfs_Best (4-layer) lifted index_var: nan
+          gfs_Planetary boundary layer height_mean: nan
+          gfs_Planetary boundary layer height_var: nan
+          gfs_Land-sea mask_mean: nan
+          gfs_Land-sea mask_var: nan
+          gfs_Sea ice area fraction_mean: nan
+          gfs_Sea ice area fraction_var: nan
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: nan
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: nan
+          row_nan_count: 48.6064453125
+  E5P9N:
+          maiac_Optical_Depth_047_mean: 192.1274755760991
+          maiac_Optical_Depth_047_var: 2280.2296089724523
+          maiac_Optical_Depth_055_mean: 142.06023562447578
+          maiac_Optical_Depth_055_var: 1249.0469609742363
+          maiac_AOD_Uncertainty_mean: 475.26005834702465
+          maiac_AOD_Uncertainty_var: 74192.60491667515
+          maiac_Column_WV_mean: 1297.9504216903672
+          maiac_Column_WV_var: 75306.25666394642
+          maiac_AOD_QA_mean: 799.9257892667387
+          maiac_AOD_QA_var: 329586.9695710498
+          maiac_AOD_MODEL_mean: 2.0
+          maiac_AOD_MODEL_var: 0.0
+          maiac_Injection_Height_mean: 778.1829711914063
+          maiac_Injection_Height_var: 52897.258529307976
+          misr_Aerosol_Optical_Depth_mean: 0.13982552569730583
+          misr_Aerosol_Optical_Depth_var: 0.0028353552556252297
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.048069882622188975
+          misr_Angstrom_Exponent_550_860nm_mean: 0.90571619576192
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.0025336650146642234
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.009698499391129975
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.07007719129620792
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.010601744022179976
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.05914799209250006
+          gfs_Wind speed (gust)_mean: nan
+          gfs_Wind speed (gust)_var: nan
+          gfs_Haines Index_mean: nan
+          gfs_Haines Index_var: nan
+          gfs_Surface pressure_mean: nan
+          gfs_Surface pressure_var: nan
+          gfs_Orography_mean: nan
+          gfs_Orography_var: nan
+          gfs_Temperature_mean: nan
+          gfs_Temperature_var: nan
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: nan
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: nan
+          gfs_Snow depth_mean: nan
+          gfs_Snow depth_var: nan
+          gfs_Percent frozen precipitation_mean: nan
+          gfs_Percent frozen precipitation_var: nan
+          gfs_Wilting Point_mean: nan
+          gfs_Wilting Point_var: nan
+          gfs_Field Capacity_mean: nan
+          gfs_Field Capacity_var: nan
+          gfs_Sunshine Duration_mean: nan
+          gfs_Sunshine Duration_var: nan
+          gfs_Surface lifted index_mean: nan
+          gfs_Surface lifted index_var: nan
+          gfs_Convective available potential energy_mean: nan
+          gfs_Convective available potential energy_var: nan
+          gfs_Convective inhibition_mean: nan
+          gfs_Convective inhibition_var: nan
+          gfs_Best (4-layer) lifted index_mean: nan
+          gfs_Best (4-layer) lifted index_var: nan
+          gfs_Planetary boundary layer height_mean: nan
+          gfs_Planetary boundary layer height_var: nan
+          gfs_Land-sea mask_mean: nan
+          gfs_Land-sea mask_var: nan
+          gfs_Sea ice area fraction_mean: nan
+          gfs_Sea ice area fraction_var: nan
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: nan
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: nan
+          row_nan_count: 48.08173076923077
+  FRITQ:
+          maiac_Optical_Depth_047_mean: 180.06981559233233
+          maiac_Optical_Depth_047_var: 1574.0849013329773
+          maiac_Optical_Depth_055_mean: 133.13897050510752
+          maiac_Optical_Depth_055_var: 862.3711026851556
+          maiac_AOD_Uncertainty_mean: 507.49281073398276
+          maiac_AOD_Uncertainty_var: 79243.07830054653
+          maiac_Column_WV_mean: 1132.8854053684922
+          maiac_Column_WV_var: 58052.45881045277
+          maiac_AOD_QA_mean: 797.8270775998225
+          maiac_AOD_QA_var: 189543.63282684833
+          maiac_AOD_MODEL_mean: 2.0
+          maiac_AOD_MODEL_var: 0.0
+          maiac_Injection_Height_mean: nan
+          maiac_Injection_Height_var: nan
+          misr_Aerosol_Optical_Depth_mean: 0.16873527201823887
+          misr_Aerosol_Optical_Depth_var: 0.0027833133336457364
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.050101245287805754
+          misr_Angstrom_Exponent_550_860nm_mean: 0.7052237950265408
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.0009252914715034
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.007940536714158912
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.0857891082996502
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.010576917993603212
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.07237100612837818
+          gfs_Wind speed (gust)_mean: nan
+          gfs_Wind speed (gust)_var: nan
+          gfs_Haines Index_mean: nan
+          gfs_Haines Index_var: nan
+          gfs_Surface pressure_mean: nan
+          gfs_Surface pressure_var: nan
+          gfs_Orography_mean: nan
+          gfs_Orography_var: nan
+          gfs_Temperature_mean: nan
+          gfs_Temperature_var: nan
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: nan
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: nan
+          gfs_Snow depth_mean: nan
+          gfs_Snow depth_var: nan
+          gfs_Percent frozen precipitation_mean: nan
+          gfs_Percent frozen precipitation_var: nan
+          gfs_Wilting Point_mean: nan
+          gfs_Wilting Point_var: nan
+          gfs_Field Capacity_mean: nan
+          gfs_Field Capacity_var: nan
+          gfs_Sunshine Duration_mean: nan
+          gfs_Sunshine Duration_var: nan
+          gfs_Surface lifted index_mean: nan
+          gfs_Surface lifted index_var: nan
+          gfs_Convective available potential energy_mean: nan
+          gfs_Convective available potential energy_var: nan
+          gfs_Convective inhibition_mean: nan
+          gfs_Convective inhibition_var: nan
+          gfs_Best (4-layer) lifted index_mean: nan
+          gfs_Best (4-layer) lifted index_var: nan
+          gfs_Planetary boundary layer height_mean: nan
+          gfs_Planetary boundary layer height_var: nan
+          gfs_Land-sea mask_mean: nan
+          gfs_Land-sea mask_var: nan
+          gfs_Sea ice area fraction_mean: nan
+          gfs_Sea ice area fraction_var: nan
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: nan
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: nan
+          row_nan_count: 49.58536585365854
+  H96P6:
+          maiac_Optical_Depth_047_mean: 171.22435760027096
+          maiac_Optical_Depth_047_var: 2131.6866306061556
+          maiac_Optical_Depth_055_mean: 126.58577082363176
+          maiac_Optical_Depth_055_var: 1167.396816900486
+          maiac_AOD_Uncertainty_mean: 393.82506805006324
+          maiac_AOD_Uncertainty_var: 49564.05839870282
+          maiac_Column_WV_mean: 1282.6779078126299
+          maiac_Column_WV_var: 63816.00309065381
+          maiac_AOD_QA_mean: 721.7769893755179
+          maiac_AOD_QA_var: 309263.1584756716
+          maiac_AOD_MODEL_mean: 2.0
+          maiac_AOD_MODEL_var: 0.0
+          maiac_Injection_Height_mean: 354.5235137939453
+          maiac_Injection_Height_var: 13150.547524806796
+          misr_Aerosol_Optical_Depth_mean: 0.10818049923321343
+          misr_Aerosol_Optical_Depth_var: 0.0006374100940144448
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.04047263286041988
+          misr_Angstrom_Exponent_550_860nm_mean: 0.860666685143616
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.001399154356475706
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.014205085856211436
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.05901476228418047
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.008754534254745445
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.04041203469950165
+          gfs_Wind speed (gust)_mean: nan
+          gfs_Wind speed (gust)_var: nan
+          gfs_Haines Index_mean: nan
+          gfs_Haines Index_var: nan
+          gfs_Surface pressure_mean: nan
+          gfs_Surface pressure_var: nan
+          gfs_Orography_mean: nan
+          gfs_Orography_var: nan
+          gfs_Temperature_mean: nan
+          gfs_Temperature_var: nan
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: nan
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: nan
+          gfs_Snow depth_mean: nan
+          gfs_Snow depth_var: nan
+          gfs_Percent frozen precipitation_mean: nan
+          gfs_Percent frozen precipitation_var: nan
+          gfs_Wilting Point_mean: nan
+          gfs_Wilting Point_var: nan
+          gfs_Field Capacity_mean: nan
+          gfs_Field Capacity_var: nan
+          gfs_Sunshine Duration_mean: nan
+          gfs_Sunshine Duration_var: nan
+          gfs_Surface lifted index_mean: nan
+          gfs_Surface lifted index_var: nan
+          gfs_Convective available potential energy_mean: nan
+          gfs_Convective available potential energy_var: nan
+          gfs_Convective inhibition_mean: nan
+          gfs_Convective inhibition_var: nan
+          gfs_Best (4-layer) lifted index_mean: nan
+          gfs_Best (4-layer) lifted index_var: nan
+          gfs_Planetary boundary layer height_mean: nan
+          gfs_Planetary boundary layer height_var: nan
+          gfs_Land-sea mask_mean: nan
+          gfs_Land-sea mask_var: nan
+          gfs_Sea ice area fraction_mean: nan
+          gfs_Sea ice area fraction_var: nan
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: nan
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: nan
+          row_nan_count: 48.184719535783366
+  PG3MI:
+          maiac_Optical_Depth_047_mean: 194.87225564875806
+          maiac_Optical_Depth_047_var: 2019.4303855726862
+          maiac_Optical_Depth_055_mean: 144.09399220473748
+          maiac_Optical_Depth_055_var: 1106.4640073863661
+          maiac_AOD_Uncertainty_mean: 407.8832044647246
+          maiac_AOD_Uncertainty_var: 73437.14382094778
+          maiac_Column_WV_mean: 1333.8996523490318
+          maiac_Column_WV_var: 79857.36406404438
+          maiac_AOD_QA_mean: 770.8865778040818
+          maiac_AOD_QA_var: 373314.1354428475
+          maiac_AOD_MODEL_mean: 2.0
+          maiac_AOD_MODEL_var: 0.0
+          maiac_Injection_Height_mean: 455.2059555053711
+          maiac_Injection_Height_var: 15983.954116025096
+          misr_Aerosol_Optical_Depth_mean: 0.136974261293099
+          misr_Aerosol_Optical_Depth_var: 0.001204241683365019
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.048756405294296236
+          misr_Angstrom_Exponent_550_860nm_mean: 0.8733431106521969
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.0017306858564414005
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.012794572903242483
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.08021557427321868
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.00908346803040499
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.047676252451596374
+          gfs_Wind speed (gust)_mean: nan
+          gfs_Wind speed (gust)_var: nan
+          gfs_Haines Index_mean: nan
+          gfs_Haines Index_var: nan
+          gfs_Surface pressure_mean: nan
+          gfs_Surface pressure_var: nan
+          gfs_Orography_mean: nan
+          gfs_Orography_var: nan
+          gfs_Temperature_mean: nan
+          gfs_Temperature_var: nan
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: nan
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: nan
+          gfs_Snow depth_mean: nan
+          gfs_Snow depth_var: nan
+          gfs_Percent frozen precipitation_mean: nan
+          gfs_Percent frozen precipitation_var: nan
+          gfs_Wilting Point_mean: nan
+          gfs_Wilting Point_var: nan
+          gfs_Field Capacity_mean: nan
+          gfs_Field Capacity_var: nan
+          gfs_Sunshine Duration_mean: nan
+          gfs_Sunshine Duration_var: nan
+          gfs_Surface lifted index_mean: nan
+          gfs_Surface lifted index_var: nan
+          gfs_Convective available potential energy_mean: nan
+          gfs_Convective available potential energy_var: nan
+          gfs_Convective inhibition_mean: nan
+          gfs_Convective inhibition_var: nan
+          gfs_Best (4-layer) lifted index_mean: nan
+          gfs_Best (4-layer) lifted index_var: nan
+          gfs_Planetary boundary layer height_mean: nan
+          gfs_Planetary boundary layer height_var: nan
+          gfs_Land-sea mask_mean: nan
+          gfs_Land-sea mask_var: nan
+          gfs_Sea ice area fraction_mean: nan
+          gfs_Sea ice area fraction_var: nan
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: nan
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: nan
+          row_nan_count: 48.56813819577735
+  QJHW4:
+          maiac_Optical_Depth_047_mean: 157.11826641280632
+          maiac_Optical_Depth_047_var: 2097.944931836486
+          maiac_Optical_Depth_055_mean: 116.14961043428023
+          maiac_Optical_Depth_055_var: 1148.968928041597
+          maiac_AOD_Uncertainty_mean: 263.10191037090505
+          maiac_AOD_Uncertainty_var: 21196.0004786259
+          maiac_Column_WV_mean: 1145.6650142577535
+          maiac_Column_WV_var: 47785.93876701858
+          maiac_AOD_QA_mean: 814.5245130050586
+          maiac_AOD_QA_var: 345529.4160043213
+          maiac_AOD_MODEL_mean: 2.0
+          maiac_AOD_MODEL_var: 0.0
+          maiac_Injection_Height_mean: 833.4837295532227
+          maiac_Injection_Height_var: 16530.184597691572
+          misr_Aerosol_Optical_Depth_mean: 0.10984972895560213
+          misr_Aerosol_Optical_Depth_var: 0.0004388427507407217
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.04132726651673409
+          misr_Angstrom_Exponent_550_860nm_mean: 0.9120770016495062
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.0016021086560569706
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.010367921523141596
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.053026153206140986
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.007874853268256174
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.048949834837445146
+          gfs_Wind speed (gust)_mean: nan
+          gfs_Wind speed (gust)_var: nan
+          gfs_Haines Index_mean: nan
+          gfs_Haines Index_var: nan
+          gfs_Surface pressure_mean: nan
+          gfs_Surface pressure_var: nan
+          gfs_Orography_mean: nan
+          gfs_Orography_var: nan
+          gfs_Temperature_mean: nan
+          gfs_Temperature_var: nan
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: nan
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: nan
+          gfs_Snow depth_mean: nan
+          gfs_Snow depth_var: nan
+          gfs_Percent frozen precipitation_mean: nan
+          gfs_Percent frozen precipitation_var: nan
+          gfs_Wilting Point_mean: nan
+          gfs_Wilting Point_var: nan
+          gfs_Field Capacity_mean: nan
+          gfs_Field Capacity_var: nan
+          gfs_Sunshine Duration_mean: nan
+          gfs_Sunshine Duration_var: nan
+          gfs_Surface lifted index_mean: nan
+          gfs_Surface lifted index_var: nan
+          gfs_Convective available potential energy_mean: nan
+          gfs_Convective available potential energy_var: nan
+          gfs_Convective inhibition_mean: nan
+          gfs_Convective inhibition_var: nan
+          gfs_Best (4-layer) lifted index_mean: nan
+          gfs_Best (4-layer) lifted index_var: nan
+          gfs_Planetary boundary layer height_mean: nan
+          gfs_Planetary boundary layer height_var: nan
+          gfs_Land-sea mask_mean: nan
+          gfs_Land-sea mask_var: nan
+          gfs_Sea ice area fraction_mean: nan
+          gfs_Sea ice area fraction_var: nan
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: nan
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: nan
+          row_nan_count: 48.05694980694981
+  WT52R:
+          maiac_Optical_Depth_047_mean: 172.7880170342381
+          maiac_Optical_Depth_047_var: 3361.3775914799558
+          maiac_Optical_Depth_055_mean: 127.74737336328424
+          maiac_Optical_Depth_055_var: 1840.9600678378727
+          maiac_AOD_Uncertainty_mean: 362.2248092385483
+          maiac_AOD_Uncertainty_var: 39440.20627296366
+          maiac_Column_WV_mean: 995.7226201138756
+          maiac_Column_WV_var: 51916.76921555347
+          maiac_AOD_QA_mean: 695.9783214927297
+          maiac_AOD_QA_var: 260777.19171604735
+          maiac_AOD_MODEL_mean: 2.0
+          maiac_AOD_MODEL_var: 0.0
+          maiac_Injection_Height_mean: 941.0551961263021
+          maiac_Injection_Height_var: 28969.991014615138
+          misr_Aerosol_Optical_Depth_mean: 0.10523139665720875
+          misr_Aerosol_Optical_Depth_var: 0.0007626862765107069
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.041781275093076296
+          misr_Angstrom_Exponent_550_860nm_mean: 0.7835010490795173
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.0011650842059221682
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.014723454061096425
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.05102787912199301
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.009443493403199232
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.044760961426735475
+          gfs_Wind speed (gust)_mean: nan
+          gfs_Wind speed (gust)_var: nan
+          gfs_Haines Index_mean: nan
+          gfs_Haines Index_var: nan
+          gfs_Surface pressure_mean: nan
+          gfs_Surface pressure_var: nan
+          gfs_Orography_mean: nan
+          gfs_Orography_var: nan
+          gfs_Temperature_mean: nan
+          gfs_Temperature_var: nan
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: nan
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: nan
+          gfs_Snow depth_mean: nan
+          gfs_Snow depth_var: nan
+          gfs_Percent frozen precipitation_mean: nan
+          gfs_Percent frozen precipitation_var: nan
+          gfs_Wilting Point_mean: nan
+          gfs_Wilting Point_var: nan
+          gfs_Field Capacity_mean: nan
+          gfs_Field Capacity_var: nan
+          gfs_Sunshine Duration_mean: nan
+          gfs_Sunshine Duration_var: nan
+          gfs_Surface lifted index_mean: nan
+          gfs_Surface lifted index_var: nan
+          gfs_Convective available potential energy_mean: nan
+          gfs_Convective available potential energy_var: nan
+          gfs_Convective inhibition_mean: nan
+          gfs_Convective inhibition_var: nan
+          gfs_Best (4-layer) lifted index_mean: nan
+          gfs_Best (4-layer) lifted index_var: nan
+          gfs_Planetary boundary layer height_mean: nan
+          gfs_Planetary boundary layer height_var: nan
+          gfs_Land-sea mask_mean: nan
+          gfs_Land-sea mask_var: nan
+          gfs_Sea ice area fraction_mean: nan
+          gfs_Sea ice area fraction_var: nan
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: nan
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: nan
+          row_nan_count: 47.629593810444874
+  X5DKW:
+          maiac_Optical_Depth_047_mean: 228.1674660902757
+          maiac_Optical_Depth_047_var: 3783.6054713791495
+          maiac_Optical_Depth_055_mean: 168.7385642711933
+          maiac_Optical_Depth_055_var: 2073.8826472440037
+          maiac_AOD_Uncertainty_mean: 715.3674696537487
+          maiac_AOD_Uncertainty_var: 225196.67266885133
+          maiac_Column_WV_mean: 999.9084858141447
+          maiac_Column_WV_var: 50332.837756411944
+          maiac_AOD_QA_mean: 891.4997905262729
+          maiac_AOD_QA_var: 131236.7180553855
+          maiac_AOD_MODEL_mean: 2.0
+          maiac_AOD_MODEL_var: 0.0
+          maiac_Injection_Height_mean: nan
+          maiac_Injection_Height_var: nan
+          misr_Aerosol_Optical_Depth_mean: 0.1904144899352737
+          misr_Aerosol_Optical_Depth_var: 0.005968738262113714
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.06596376058524064
+          misr_Angstrom_Exponent_550_860nm_mean: 0.6984450065571329
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.004143583859094261
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.03020539697583599
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.0781413964603258
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.017768007338694863
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.09450710564851757
+          gfs_Wind speed (gust)_mean: nan
+          gfs_Wind speed (gust)_var: nan
+          gfs_Haines Index_mean: nan
+          gfs_Haines Index_var: nan
+          gfs_Surface pressure_mean: nan
+          gfs_Surface pressure_var: nan
+          gfs_Orography_mean: nan
+          gfs_Orography_var: nan
+          gfs_Temperature_mean: nan
+          gfs_Temperature_var: nan
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: nan
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: nan
+          gfs_Snow depth_mean: nan
+          gfs_Snow depth_var: nan
+          gfs_Percent frozen precipitation_mean: nan
+          gfs_Percent frozen precipitation_var: nan
+          gfs_Wilting Point_mean: nan
+          gfs_Wilting Point_var: nan
+          gfs_Field Capacity_mean: nan
+          gfs_Field Capacity_var: nan
+          gfs_Sunshine Duration_mean: nan
+          gfs_Sunshine Duration_var: nan
+          gfs_Surface lifted index_mean: nan
+          gfs_Surface lifted index_var: nan
+          gfs_Convective available potential energy_mean: nan
+          gfs_Convective available potential energy_var: nan
+          gfs_Convective inhibition_mean: nan
+          gfs_Convective inhibition_var: nan
+          gfs_Best (4-layer) lifted index_mean: nan
+          gfs_Best (4-layer) lifted index_var: nan
+          gfs_Planetary boundary layer height_mean: nan
+          gfs_Planetary boundary layer height_var: nan
+          gfs_Land-sea mask_mean: nan
+          gfs_Land-sea mask_var: nan
+          gfs_Sea ice area fraction_mean: nan
+          gfs_Sea ice area fraction_var: nan
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: nan
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: nan
+          row_nan_count: 49.18260869565217
+  ZP1FZ:
+          maiac_Optical_Depth_047_mean: 170.19480132061935
+          maiac_Optical_Depth_047_var: 2173.1354049375777
+          maiac_Optical_Depth_055_mean: 125.83033136345416
+          maiac_Optical_Depth_055_var: 1190.3096954128625
+          maiac_AOD_Uncertainty_mean: 254.64292996994993
+          maiac_AOD_Uncertainty_var: 24792.69372347746
+          maiac_Column_WV_mean: 1204.6183353549507
+          maiac_Column_WV_var: 68036.13287476156
+          maiac_AOD_QA_mean: 966.3499523343615
+          maiac_AOD_QA_var: 297965.3242502322
+          maiac_AOD_MODEL_mean: 2.0
+          maiac_AOD_MODEL_var: 0.0
+          maiac_Injection_Height_mean: 813.3078002929688
+          maiac_Injection_Height_var: 37661.55387450831
+          misr_Aerosol_Optical_Depth_mean: 0.10766979079870947
+          misr_Aerosol_Optical_Depth_var: 0.0008136445799647317
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.04089152058586473
+          misr_Angstrom_Exponent_550_860nm_mean: 0.7981661646139054
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.0016343898945792583
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.017774326901971556
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.0497403021037046
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.010721759309672006
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.04720868728611436
+          gfs_Wind speed (gust)_mean: nan
+          gfs_Wind speed (gust)_var: nan
+          gfs_Haines Index_mean: nan
+          gfs_Haines Index_var: nan
+          gfs_Surface pressure_mean: nan
+          gfs_Surface pressure_var: nan
+          gfs_Orography_mean: nan
+          gfs_Orography_var: nan
+          gfs_Temperature_mean: nan
+          gfs_Temperature_var: nan
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: nan
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: nan
+          gfs_Snow depth_mean: nan
+          gfs_Snow depth_var: nan
+          gfs_Percent frozen precipitation_mean: nan
+          gfs_Percent frozen precipitation_var: nan
+          gfs_Wilting Point_mean: nan
+          gfs_Wilting Point_var: nan
+          gfs_Field Capacity_mean: nan
+          gfs_Field Capacity_var: nan
+          gfs_Sunshine Duration_mean: nan
+          gfs_Sunshine Duration_var: nan
+          gfs_Surface lifted index_mean: nan
+          gfs_Surface lifted index_var: nan
+          gfs_Convective available potential energy_mean: nan
+          gfs_Convective available potential energy_var: nan
+          gfs_Convective inhibition_mean: nan
+          gfs_Convective inhibition_var: nan
+          gfs_Best (4-layer) lifted index_mean: nan
+          gfs_Best (4-layer) lifted index_var: nan
+          gfs_Planetary boundary layer height_mean: nan
+          gfs_Planetary boundary layer height_var: nan
+          gfs_Land-sea mask_mean: nan
+          gfs_Land-sea mask_var: nan
+          gfs_Sea ice area fraction_mean: nan
+          gfs_Sea ice area fraction_var: nan
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: nan
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: nan
+          row_nan_count: 48.71980676328502
+  ZZ8JF:
+          maiac_Optical_Depth_047_mean: 164.14730378291085
+          maiac_Optical_Depth_047_var: 3069.4024459701377
+          maiac_Optical_Depth_055_mean: 126.35807231061465
+          maiac_Optical_Depth_055_var: 1316.1458477151823
+          maiac_AOD_Uncertainty_mean: 310.106237111694
+          maiac_AOD_Uncertainty_var: 29519.779335241918
+          maiac_Column_WV_mean: 1209.3428495328014
+          maiac_Column_WV_var: 119329.1880164293
+          maiac_AOD_QA_mean: 1048.1797365282403
+          maiac_AOD_QA_var: 1072812.4431085875
+          maiac_AOD_MODEL_mean: 2.0
+          maiac_AOD_MODEL_var: 0.0
+          maiac_Injection_Height_mean: 1110.7825317382812
+          maiac_Injection_Height_var: 392214.9012434203
+          misr_Aerosol_Optical_Depth_mean: 0.11677167521203666
+          misr_Aerosol_Optical_Depth_var: 0.0009674820926082371
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.03641097088543212
+          misr_Angstrom_Exponent_550_860nm_mean: 0.8239779434679599
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.0024337065225526807
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.013223420585939906
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.0570509621959828
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.012722720314833236
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.046999005139072826
+          gfs_Wind speed (gust)_mean: nan
+          gfs_Wind speed (gust)_var: nan
+          gfs_Haines Index_mean: nan
+          gfs_Haines Index_var: nan
+          gfs_Surface pressure_mean: nan
+          gfs_Surface pressure_var: nan
+          gfs_Orography_mean: nan
+          gfs_Orography_var: nan
+          gfs_Temperature_mean: nan
+          gfs_Temperature_var: nan
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: nan
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: nan
+          gfs_Snow depth_mean: nan
+          gfs_Snow depth_var: nan
+          gfs_Percent frozen precipitation_mean: nan
+          gfs_Percent frozen precipitation_var: nan
+          gfs_Wilting Point_mean: nan
+          gfs_Wilting Point_var: nan
+          gfs_Field Capacity_mean: nan
+          gfs_Field Capacity_var: nan
+          gfs_Sunshine Duration_mean: nan
+          gfs_Sunshine Duration_var: nan
+          gfs_Surface lifted index_mean: nan
+          gfs_Surface lifted index_var: nan
+          gfs_Convective available potential energy_mean: nan
+          gfs_Convective available potential energy_var: nan
+          gfs_Convective inhibition_mean: nan
+          gfs_Convective inhibition_var: nan
+          gfs_Best (4-layer) lifted index_mean: nan
+          gfs_Best (4-layer) lifted index_var: nan
+          gfs_Planetary boundary layer height_mean: nan
+          gfs_Planetary boundary layer height_var: nan
+          gfs_Land-sea mask_mean: nan
+          gfs_Land-sea mask_var: nan
+          gfs_Sea ice area fraction_mean: nan
+          gfs_Sea ice area fraction_var: nan
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: nan
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: nan
+          row_nan_count: 47.08863198458574
+  1X116:
+          maiac_Optical_Depth_047_mean: 386.59429736704556
+          maiac_Optical_Depth_047_var: 4023.509164256807
+          maiac_Optical_Depth_055_mean: 301.901983051048
+          maiac_Optical_Depth_055_var: 2526.8035379672465
+          maiac_AOD_Uncertainty_mean: 425.18168138093455
+          maiac_AOD_Uncertainty_var: 78203.34184616467
+          maiac_Column_WV_mean: 2124.7456950722158
+          maiac_Column_WV_var: 529188.2370303653
+          maiac_AOD_QA_mean: 1199.0313445707568
+          maiac_AOD_QA_var: 158417.3376217478
+          maiac_AOD_MODEL_mean: 5.0
+          maiac_AOD_MODEL_var: 0.0
+          maiac_Injection_Height_mean: 270.481990814209
+          maiac_Injection_Height_var: 2900.8790997522447
+          misr_Aerosol_Optical_Depth_mean: 0.19695426646289943
+          misr_Aerosol_Optical_Depth_var: 0.0023915656909951405
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.04608785483656046
+          misr_Angstrom_Exponent_550_860nm_mean: 1.3266147012952008
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.002349996625422176
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.011893257089077087
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.10634583201778082
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.020700504275368885
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.06990958780899073
+          gfs_Wind speed (gust)_mean: 5.215472822315507
+          gfs_Wind speed (gust)_var: 8.708798151521286
+          gfs_Haines Index_mean: 2224.3844869459626
+          gfs_Haines Index_var: 17269899.236524325
+          gfs_Surface pressure_mean: 98296.70512437387
+          gfs_Surface pressure_var: 9928055.818552252
+          gfs_Orography_mean: 281.3291578289836
+          gfs_Orography_var: 79483.35878459153
+          gfs_Temperature_mean: 293.86398882793526
+          gfs_Temperature_var: 9.262651285164944
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 1775.7832422586523
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 13810210.679214733
+          gfs_Snow depth_mean: 1775.7787112932604
+          gfs_Snow depth_var: 13810230.759472951
+          gfs_Percent frozen precipitation_mean: -31.888348544317086
+          gfs_Percent frozen precipitation_var: 312.36737839843494
+          gfs_Wilting Point_mean: 1250.7614768967214
+          gfs_Wilting Point_var: 9725855.59286315
+          gfs_Field Capacity_mean: 1250.89870438142
+          gfs_Field Capacity_var: 9725508.087243225
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 3.504899597978621
+          gfs_Surface lifted index_var: 1.4489485934021453
+          gfs_Convective available potential energy_mean: 254.2674559805707
+          gfs_Convective available potential energy_var: 52813.07296093908
+          gfs_Convective inhibition_mean: -29.260965089965897
+          gfs_Convective inhibition_var: 828.9631984078798
+          gfs_Best (4-layer) lifted index_mean: 2.7219252530198137
+          gfs_Best (4-layer) lifted index_var: 1.1627157120690819
+          gfs_Planetary boundary layer height_mean: 354.0767008876743
+          gfs_Planetary boundary layer height_var: 58571.975248843024
+          gfs_Land-sea mask_mean: 0.7777777777777777
+          gfs_Land-sea mask_var: 0.17283950617283944
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 0.7777777777777776
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.17283950617283944
+          row_nan_count: 14.745578231292518
+  90BZ1:
+          maiac_Optical_Depth_047_mean: 370.55557789153335
+          maiac_Optical_Depth_047_var: 2725.436972155821
+          maiac_Optical_Depth_055_mean: 288.77232234578736
+          maiac_Optical_Depth_055_var: 1701.3592438645057
+          maiac_AOD_Uncertainty_mean: 467.4635726342639
+          maiac_AOD_Uncertainty_var: 68964.89098655833
+          maiac_Column_WV_mean: 2085.315897043315
+          maiac_Column_WV_var: 514895.17588278797
+          maiac_AOD_QA_mean: 1227.3846735288018
+          maiac_AOD_QA_var: 112487.24393045208
+          maiac_AOD_MODEL_mean: 5.0
+          maiac_AOD_MODEL_var: 0.0
+          maiac_Injection_Height_mean: 277.5318069458008
+          maiac_Injection_Height_var: 9956.491991881747
+          misr_Aerosol_Optical_Depth_mean: 0.21056629803318241
+          misr_Aerosol_Optical_Depth_var: 0.003993321141584473
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.045481181416947056
+          misr_Angstrom_Exponent_550_860nm_mean: 1.3546491402846117
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.0033803538020807248
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.013308915291697917
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.12104344095748201
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.022871912815249813
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.0666525154911841
+          gfs_Wind speed (gust)_mean: 5.791878710427181
+          gfs_Wind speed (gust)_var: 3.3813179160935354
+          gfs_Haines Index_mean: 2501.983149931224
+          gfs_Haines Index_var: 18735087.372162998
+          gfs_Surface pressure_mean: 99578.98757307426
+          gfs_Surface pressure_var: 1958994.1473452542
+          gfs_Orography_mean: 166.74055388690684
+          gfs_Orography_var: 15044.889773865196
+          gfs_Temperature_mean: 294.62479014652473
+          gfs_Temperature_var: 5.7946096973865195
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 2011.4907152682256
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 15084671.74647524
+          gfs_Snow depth_mean: 2011.4907152682256
+          gfs_Snow depth_var: 15084671.74647524
+          gfs_Percent frozen precipitation_mean: -27.445742004478483
+          gfs_Percent frozen precipitation_var: 232.9301323933976
+          gfs_Wilting Point_mean: 1416.7615381699154
+          gfs_Wilting Point_var: 10623376.807768183
+          gfs_Field Capacity_mean: 1416.879501542267
+          gfs_Field Capacity_var: 10623031.433938513
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 3.164289934664678
+          gfs_Surface lifted index_var: 0.39126805364511696
+          gfs_Convective available potential energy_mean: 310.66506189821183
+          gfs_Convective available potential energy_var: 27019.891334250344
+          gfs_Convective inhibition_mean: -28.29748951572171
+          gfs_Convective inhibition_var: 523.474292469051
+          gfs_Best (4-layer) lifted index_mean: 2.712575066106028
+          gfs_Best (4-layer) lifted index_var: 0.3533777510316368
+          gfs_Planetary boundary layer height_mean: 429.4052409285135
+          gfs_Planetary boundary layer height_var: 30070.408830811553
+          gfs_Land-sea mask_mean: 0.75
+          gfs_Land-sea mask_var: 0.18749999999999992
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 0.75
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.1874999999999999
+          row_nan_count: 15.169863013698631
+  9Q6TA:
+          maiac_Optical_Depth_047_mean: 404.94108706254224
+          maiac_Optical_Depth_047_var: 4015.8752483421404
+          maiac_Optical_Depth_055_mean: 316.000063089224
+          maiac_Optical_Depth_055_var: 2553.300822481282
+          maiac_AOD_Uncertainty_mean: 340.4897902352469
+          maiac_AOD_Uncertainty_var: 53951.35286626975
+          maiac_Column_WV_mean: 2167.289189898278
+          maiac_Column_WV_var: 538412.9531279126
+          maiac_AOD_QA_mean: 1267.1859150996825
+          maiac_AOD_QA_var: 113664.83139110752
+          maiac_AOD_MODEL_mean: 5.0
+          maiac_AOD_MODEL_var: 0.0
+          maiac_Injection_Height_mean: 203.03533935546875
+          maiac_Injection_Height_var: 9843.266609100789
+          misr_Aerosol_Optical_Depth_mean: 0.21056629803318241
+          misr_Aerosol_Optical_Depth_var: 0.003993321141584473
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.045481181416947056
+          misr_Angstrom_Exponent_550_860nm_mean: 1.3546491402846117
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.0033803538020807248
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.013308915291697917
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.12104344095748201
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.02287191281524982
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.0666525154911841
+          gfs_Wind speed (gust)_mean: 5.778101844780596
+          gfs_Wind speed (gust)_var: 3.3904696038251374
+          gfs_Haines Index_mean: 2501.9829234972676
+          gfs_Haines Index_var: 18735088.50409836
+          gfs_Surface pressure_mean: 99574.90093493853
+          gfs_Surface pressure_var: 1958245.61420765
+          gfs_Orography_mean: 166.76104003906252
+          gfs_Orography_var: 15043.62231912568
+          gfs_Temperature_mean: 294.6427646324283
+          gfs_Temperature_var: 5.794763490437159
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 1997.751024590164
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 14981634.371157788
+          gfs_Snow depth_mean: 1997.751024590164
+          gfs_Snow depth_var: 14981634.371157788
+          gfs_Percent frozen precipitation_mean: -27.599801185482836
+          gfs_Percent frozen precipitation_var: 231.33907957650277
+          gfs_Wilting Point_mean: 1407.0850409829625
+          gfs_Wilting Point_var: 10550812.758676387
+          gfs_Field Capacity_mean: 1407.202943300858
+          gfs_Field Capacity_var: 10550469.743966894
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 3.1573510248152936
+          gfs_Surface lifted index_var: 0.3917998633879782
+          gfs_Convective available potential energy_mean: 309.5198087431694
+          gfs_Convective available potential energy_var: 26951.313353825135
+          gfs_Convective inhibition_mean: -28.407075442121332
+          gfs_Convective inhibition_var: 524.1716162909836
+          gfs_Best (4-layer) lifted index_mean: 2.7020178456124064
+          gfs_Best (4-layer) lifted index_var: 0.3554474043715847
+          gfs_Planetary boundary layer height_mean: 428.19909311596814
+          gfs_Planetary boundary layer height_var: 30136.76556612022
+          gfs_Land-sea mask_mean: 0.75
+          gfs_Land-sea mask_var: 0.18749999999999992
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 0.75
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.18749999999999992
+          row_nan_count: 15.250340136054422
+  KW43U:
+          maiac_Optical_Depth_047_mean: 404.4832160256126
+          maiac_Optical_Depth_047_var: 2581.433390124861
+          maiac_Optical_Depth_055_mean: 315.64378030542383
+          maiac_Optical_Depth_055_var: 1645.5949226804717
+          maiac_AOD_Uncertainty_mean: 268.76468485902376
+          maiac_AOD_Uncertainty_var: 23721.663995477877
+          maiac_Column_WV_mean: 2153.046178209913
+          maiac_Column_WV_var: 566547.1787015117
+          maiac_AOD_QA_mean: 1256.9549046782408
+          maiac_AOD_QA_var: 112727.65221991061
+          maiac_AOD_MODEL_mean: 5.0
+          maiac_AOD_MODEL_var: 0.0
+          maiac_Injection_Height_mean: 369.6987731933594
+          maiac_Injection_Height_var: 23575.125914603916
+          misr_Aerosol_Optical_Depth_mean: 0.18975515980018326
+          misr_Aerosol_Optical_Depth_var: 0.0030036869440839085
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.04075857283777156
+          misr_Angstrom_Exponent_550_860nm_mean: 1.3994400386940944
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.00261977566278549
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.008053935655992312
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.12195597910513611
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.018369668801251286
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.049430699234768304
+          gfs_Wind speed (gust)_mean: 5.778101844780596
+          gfs_Wind speed (gust)_var: 3.3904696038251374
+          gfs_Haines Index_mean: 2501.9829234972676
+          gfs_Haines Index_var: 18735088.50409836
+          gfs_Surface pressure_mean: 99574.90093493853
+          gfs_Surface pressure_var: 1958245.61420765
+          gfs_Orography_mean: 166.76104003906252
+          gfs_Orography_var: 15043.62231912568
+          gfs_Temperature_mean: 294.6427646324283
+          gfs_Temperature_var: 5.794763490437159
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 1997.751024590164
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 14981634.371157788
+          gfs_Snow depth_mean: 1997.751024590164
+          gfs_Snow depth_var: 14981634.371157788
+          gfs_Percent frozen precipitation_mean: -27.599801185482836
+          gfs_Percent frozen precipitation_var: 231.33907957650277
+          gfs_Wilting Point_mean: 1407.0850409829625
+          gfs_Wilting Point_var: 10550812.758676387
+          gfs_Field Capacity_mean: 1407.202943300858
+          gfs_Field Capacity_var: 10550469.743966894
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 3.1573510248152936
+          gfs_Surface lifted index_var: 0.3917998633879782
+          gfs_Convective available potential energy_mean: 309.5198087431694
+          gfs_Convective available potential energy_var: 26951.313353825135
+          gfs_Convective inhibition_mean: -28.407075442121332
+          gfs_Convective inhibition_var: 524.1716162909836
+          gfs_Best (4-layer) lifted index_mean: 2.7020178456124064
+          gfs_Best (4-layer) lifted index_var: 0.3554474043715847
+          gfs_Planetary boundary layer height_mean: 428.19909311596814
+          gfs_Planetary boundary layer height_var: 30136.76556612022
+          gfs_Land-sea mask_mean: 0.75
+          gfs_Land-sea mask_var: 0.18749999999999992
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 0.75
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.18749999999999992
+          row_nan_count: 15.142857142857142
+  VR4WG:
+          maiac_Optical_Depth_047_mean: 369.17397662105725
+          maiac_Optical_Depth_047_var: 4011.935877584995
+          maiac_Optical_Depth_055_mean: 287.74644604707373
+          maiac_Optical_Depth_055_var: 2504.394918392384
+          maiac_AOD_Uncertainty_mean: 520.2886635632508
+          maiac_AOD_Uncertainty_var: 120826.35986993519
+          maiac_Column_WV_mean: 2126.760932713052
+          maiac_Column_WV_var: 500637.8749148662
+          maiac_AOD_QA_mean: 1231.472600238826
+          maiac_AOD_QA_var: 102661.08421666553
+          maiac_AOD_MODEL_mean: 5.0
+          maiac_AOD_MODEL_var: 0.0
+          maiac_Injection_Height_mean: 193.8546905517578
+          maiac_Injection_Height_var: 14554.581433391433
+          misr_Aerosol_Optical_Depth_mean: 0.2155172070030306
+          misr_Aerosol_Optical_Depth_var: 0.0035350990508876356
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.046140226184344615
+          misr_Angstrom_Exponent_550_860nm_mean: 1.3112197762630025
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.003421701107280999
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.011043845126252661
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.11143836311873839
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.02055740673247658
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.08352347252676719
+          gfs_Wind speed (gust)_mean: 6.500779440409011
+          gfs_Wind speed (gust)_var: 6.00709927140255
+          gfs_Haines Index_mean: 3334.995446265938
+          gfs_Haines Index_var: 22204478.536505766
+          gfs_Surface pressure_mean: 100000.37761982014
+          gfs_Surface pressure_var: 1792335.4032301153
+          gfs_Orography_mean: 128.65114932868
+          gfs_Orography_var: 13817.54699307832
+          gfs_Temperature_mean: 295.3435273828837
+          gfs_Temperature_var: 5.645333940497875
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 2663.6680327868853
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 17756011.106557377
+          gfs_Snow depth_mean: 2663.6680327868853
+          gfs_Snow depth_var: 17756011.106557377
+          gfs_Percent frozen precipitation_mean: -30.50050701426244
+          gfs_Percent frozen precipitation_var: 270.10740361262907
+          gfs_Wilting Point_mean: 1876.0970483828514
+          gfs_Wilting Point_var: 12504528.156752657
+          gfs_Field Capacity_mean: 1876.1803138615396
+          gfs_Field Capacity_var: 12504205.933804488
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 3.2178929191686634
+          gfs_Surface lifted index_var: 0.5007748937462052
+          gfs_Convective available potential energy_mean: 304.6928506375228
+          gfs_Convective available potential energy_var: 34122.123595932
+          gfs_Convective inhibition_mean: -29.124846389298014
+          gfs_Convective inhibition_var: 616.3683329538554
+          gfs_Best (4-layer) lifted index_mean: 2.7006289567235173
+          gfs_Best (4-layer) lifted index_var: 0.43474043715847
+          gfs_Planetary boundary layer height_mean: 469.37424794292633
+          gfs_Planetary boundary layer height_var: 33083.26793782636
+          gfs_Land-sea mask_mean: 0.6666666666666667
+          gfs_Land-sea mask_var: 0.22222222222222224
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 0.6666666666666667
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.2222222222222222
+          row_nan_count: 14.92517006802721
+  XJF9O:
+          maiac_Optical_Depth_047_mean: 364.04995457760924
+          maiac_Optical_Depth_047_var: 4422.649668040355
+          maiac_Optical_Depth_055_mean: 283.73859951947185
+          maiac_Optical_Depth_055_var: 2770.253072065085
+          maiac_AOD_Uncertainty_mean: 434.94687463949015
+          maiac_AOD_Uncertainty_var: 67260.1065245345
+          maiac_Column_WV_mean: 2088.8632964564613
+          maiac_Column_WV_var: 487987.78736351203
+          maiac_AOD_QA_mean: 1223.1387744410508
+          maiac_AOD_QA_var: 109094.3231737923
+          maiac_AOD_MODEL_mean: 5.0
+          maiac_AOD_MODEL_var: 0.0
+          maiac_Injection_Height_mean: 362.68193435668945
+          maiac_Injection_Height_var: 12554.950229088252
+          misr_Aerosol_Optical_Depth_mean: 0.2155172070030306
+          misr_Aerosol_Optical_Depth_var: 0.0035350990508876356
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.046140226184344615
+          misr_Angstrom_Exponent_550_860nm_mean: 1.3112197762630025
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.003421701107280999
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.011043845126252661
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.11143836311873839
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.02055740673247658
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.08352347252676719
+          gfs_Wind speed (gust)_mean: 6.500779440409011
+          gfs_Wind speed (gust)_var: 6.00709927140255
+          gfs_Haines Index_mean: 3334.995446265938
+          gfs_Haines Index_var: 22204478.536505766
+          gfs_Surface pressure_mean: 100000.37761982014
+          gfs_Surface pressure_var: 1792335.4032301153
+          gfs_Orography_mean: 128.65114932868
+          gfs_Orography_var: 13817.54699307832
+          gfs_Temperature_mean: 295.3435273828837
+          gfs_Temperature_var: 5.645333940497875
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 2663.6680327868853
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 17756011.106557377
+          gfs_Snow depth_mean: 2663.6680327868853
+          gfs_Snow depth_var: 17756011.106557377
+          gfs_Percent frozen precipitation_mean: -30.50050701426244
+          gfs_Percent frozen precipitation_var: 270.10740361262907
+          gfs_Wilting Point_mean: 1876.0970483828514
+          gfs_Wilting Point_var: 12504528.156752657
+          gfs_Field Capacity_mean: 1876.1803138615396
+          gfs_Field Capacity_var: 12504205.933804488
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 3.2178929191686634
+          gfs_Surface lifted index_var: 0.5007748937462052
+          gfs_Convective available potential energy_mean: 304.6928506375228
+          gfs_Convective available potential energy_var: 34122.123595932
+          gfs_Convective inhibition_mean: -29.124846389298014
+          gfs_Convective inhibition_var: 616.3683329538554
+          gfs_Best (4-layer) lifted index_mean: 2.7006289567235173
+          gfs_Best (4-layer) lifted index_var: 0.43474043715847
+          gfs_Planetary boundary layer height_mean: 469.37424794292633
+          gfs_Planetary boundary layer height_var: 33083.26793782636
+          gfs_Land-sea mask_mean: 0.6666666666666667
+          gfs_Land-sea mask_var: 0.22222222222222224
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 0.6666666666666667
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.2222222222222222
+          row_nan_count: 15.020408163265307
+  XNLVD:
+          maiac_Optical_Depth_047_mean: 407.0973358154297
+          maiac_Optical_Depth_047_var: 2402.4831484096153
+          maiac_Optical_Depth_055_mean: 317.66053091395986
+          maiac_Optical_Depth_055_var: 1516.1433865895249
+          maiac_AOD_Uncertainty_mean: 283.96066530859974
+          maiac_AOD_Uncertainty_var: 17349.953302093647
+          maiac_Column_WV_mean: 2252.8795384556097
+          maiac_Column_WV_var: 515203.8907944302
+          maiac_AOD_QA_mean: 1242.9667464564636
+          maiac_AOD_QA_var: 63057.88209965749
+          maiac_AOD_MODEL_mean: 5.0
+          maiac_AOD_MODEL_var: 0.0
+          maiac_Injection_Height_mean: 31.451884269714355
+          maiac_Injection_Height_var: 0.0
+          misr_Aerosol_Optical_Depth_mean: 0.20451655087841522
+          misr_Aerosol_Optical_Depth_var: 0.002988891187055005
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.046170368639601195
+          misr_Angstrom_Exponent_550_860nm_mean: 1.2423792191453882
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.0031160803580958405
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.011393138692034632
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.10412267011565128
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.01867131404326971
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.08172454556601268
+          gfs_Wind speed (gust)_mean: 6.504451954916242
+          gfs_Wind speed (gust)_var: 6.009876712328767
+          gfs_Haines Index_mean: 3334.996118721461
+          gfs_Haines Index_var: 22204474.05437595
+          gfs_Surface pressure_mean: 100000.60743293379
+          gfs_Surface pressure_var: 1792386.7852176563
+          gfs_Orography_mean: 128.64487925406678
+          gfs_Orography_var: 13817.452536986299
+          gfs_Temperature_mean: 295.34109104104243
+          gfs_Temperature_var: 5.634506468797565
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 2670.9657534246576
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 17804657.712328766
+          gfs_Snow depth_mean: 2670.9657534246576
+          gfs_Snow depth_var: 17804657.712328766
+          gfs_Percent frozen precipitation_mean: -30.447106560136632
+          gfs_Percent frozen precipitation_var: 270.8474219939118
+          gfs_Wilting Point_mean: 1881.2366385610694
+          gfs_Wilting Point_var: 12538787.137928145
+          gfs_Field Capacity_mean: 1881.3199203835345
+          gfs_Field Capacity_var: 12538464.0321727
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 3.2115485570202136
+          gfs_Surface lifted index_var: 0.500374809741248
+          gfs_Convective available potential energy_mean: 305.52465753424656
+          gfs_Convective available potential energy_var: 34215.59132420091
+          gfs_Convective inhibition_mean: -29.203248664472746
+          gfs_Convective inhibition_var: 618.0540833333333
+          gfs_Best (4-layer) lifted index_mean: 2.6929961593836955
+          gfs_Best (4-layer) lifted index_var: 0.43513051750380516
+          gfs_Planetary boundary layer height_mean: 469.5237883835884
+          gfs_Planetary boundary layer height_var: 33035.660913485546
+          gfs_Land-sea mask_mean: 0.6666666666666667
+          gfs_Land-sea mask_var: 0.22222222222222227
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 0.6666666666666666
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.22222222222222227
+          row_nan_count: 15.223738062755798
+  1Z2W7:
+          maiac_Optical_Depth_047_mean: 872.7533792420361
+          maiac_Optical_Depth_047_var: 19749.1093340276
+          maiac_Optical_Depth_055_mean: 700.7684522588203
+          maiac_Optical_Depth_055_var: 13287.33402059676
+          maiac_AOD_Uncertainty_mean: 454.2855151131199
+          maiac_AOD_Uncertainty_var: 107617.38354162908
+          maiac_Column_WV_mean: 2090.004799521579
+          maiac_Column_WV_var: 525935.1367647247
+          maiac_AOD_QA_mean: 1823.6779183855376
+          maiac_AOD_QA_var: 2689320.672374978
+          maiac_AOD_MODEL_mean: 7.996217492865936
+          maiac_AOD_MODEL_var: 0.0045802844266084695
+          maiac_Injection_Height_mean: 444.00171279907227
+          maiac_Injection_Height_var: 12824.11540488656
+          misr_Aerosol_Optical_Depth_mean: 0.46108413243962226
+          misr_Aerosol_Optical_Depth_var: 0.0023239374149046322
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.059714689389497824
+          misr_Angstrom_Exponent_550_860nm_mean: 0.9695764468095013
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.0023014126691629955
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.04320836857083103
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.23280104472536903
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.08427767822884506
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.14400861076749508
+          gfs_Wind speed (gust)_mean: 4.163473204205914
+          gfs_Wind speed (gust)_var: 0.5993354569420035
+          gfs_Haines Index_mean: 5.114674868189807
+          gfs_Haines Index_var: 0.06909050966608084
+          gfs_Surface pressure_mean: 98462.97789982425
+          gfs_Surface pressure_var: 9697.889912126546
+          gfs_Orography_mean: 214.85953457958044
+          gfs_Orography_var: 73.82028541300531
+          gfs_Temperature_mean: 297.90126236578703
+          gfs_Temperature_var: 5.16691564147628
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 0.0
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 0.0
+          gfs_Snow depth_mean: 0.0
+          gfs_Snow depth_var: 0.0
+          gfs_Percent frozen precipitation_mean: -47.00435583989525
+          gfs_Percent frozen precipitation_var: 39.229537565905105
+          gfs_Wilting Point_mean: 0.26085948922370145
+          gfs_Wilting Point_var: 0.013484684468365555
+          gfs_Field Capacity_mean: 0.37063188918504236
+          gfs_Field Capacity_var: 0.0016974196507029801
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 4.354832276141498
+          gfs_Surface lifted index_var: 0.28795254833040423
+          gfs_Convective available potential energy_mean: 185.1432337434095
+          gfs_Convective available potential energy_var: 4665.185193321617
+          gfs_Convective inhibition_mean: -31.538792979905814
+          gfs_Convective inhibition_var: 547.6042508787347
+          gfs_Best (4-layer) lifted index_mean: 2.7462924937162754
+          gfs_Best (4-layer) lifted index_var: 0.12384556239015815
+          gfs_Planetary boundary layer height_mean: 253.7844397916609
+          gfs_Planetary boundary layer height_var: 15851.540435149385
+          gfs_Land-sea mask_mean: 1.0
+          gfs_Land-sea mask_var: 0.0
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 1.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.0
+          row_nan_count: 10.318101933216168
+  90S79:
+          maiac_Optical_Depth_047_mean: 903.0579562370593
+          maiac_Optical_Depth_047_var: 21225.222128487156
+          maiac_Optical_Depth_055_mean: 725.3966657198392
+          maiac_Optical_Depth_055_var: 14388.39812308112
+          maiac_AOD_Uncertainty_mean: 526.0362632372226
+          maiac_AOD_Uncertainty_var: 144315.53657627795
+          maiac_Column_WV_mean: 2017.7530007683986
+          maiac_Column_WV_var: 438604.2548570934
+          maiac_AOD_QA_mean: 2119.0570137570476
+          maiac_AOD_QA_var: 3307799.255628194
+          maiac_AOD_MODEL_mean: 7.9925397875217294
+          maiac_AOD_MODEL_var: 0.007185813460371188
+          maiac_Injection_Height_mean: 439.25730243650804
+          maiac_Injection_Height_var: 10779.933015209454
+          misr_Aerosol_Optical_Depth_mean: 0.4668470381108005
+          misr_Aerosol_Optical_Depth_var: 0.003275855918573875
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.06300576095494016
+          misr_Angstrom_Exponent_550_860nm_mean: 0.9404940059227226
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.002079937429252757
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.05817467863547852
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.24669446977498258
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.09419257786182635
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.12596256520796928
+          gfs_Wind speed (gust)_mean: 4.06795163795511
+          gfs_Wind speed (gust)_var: 0.5125730994152047
+          gfs_Haines Index_mean: 5.14875730994152
+          gfs_Haines Index_var: 0.07501827485380115
+          gfs_Surface pressure_mean: 98379.44348044592
+          gfs_Surface pressure_var: 6281.246315789472
+          gfs_Orography_mean: 219.90886044864766
+          gfs_Orography_var: 48.10679999999997
+          gfs_Temperature_mean: 299.29587934170553
+          gfs_Temperature_var: 2.811447368421055
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 0.0
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 0.0
+          gfs_Snow depth_mean: 0.0
+          gfs_Snow depth_var: 0.0
+          gfs_Percent frozen precipitation_mean: -46.676504641527316
+          gfs_Percent frozen precipitation_var: 38.418902595029245
+          gfs_Wilting Point_mean: 0.2891749991054423
+          gfs_Wilting Point_var: 0.011041186875
+          gfs_Field Capacity_mean: 0.38069374284353863
+          gfs_Field Capacity_var: 0.0013887707812500001
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 3.8033478686684057
+          gfs_Surface lifted index_var: 0.22834247076023392
+          gfs_Convective available potential energy_mean: 210.98062865497076
+          gfs_Convective available potential energy_var: 4356.2040387426905
+          gfs_Convective inhibition_mean: -31.81755463895742
+          gfs_Convective inhibition_var: 433.2426745248538
+          gfs_Best (4-layer) lifted index_mean: 2.424328132540162
+          gfs_Best (4-layer) lifted index_var: 0.12781341374269006
+          gfs_Planetary boundary layer height_mean: 297.0468130885788
+          gfs_Planetary boundary layer height_var: 8032.403320467837
+          gfs_Land-sea mask_mean: 1.0
+          gfs_Land-sea mask_var: 0.0
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 1.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.0
+          row_nan_count: 10.362573099415204
+  A7UCQ:
+          maiac_Optical_Depth_047_mean: 906.432168404817
+          maiac_Optical_Depth_047_var: 18182.921329050194
+          maiac_Optical_Depth_055_mean: 728.1261529366731
+          maiac_Optical_Depth_055_var: 12327.152923224783
+          maiac_AOD_Uncertainty_mean: 421.3082563994802
+          maiac_AOD_Uncertainty_var: 69989.0170174939
+          maiac_Column_WV_mean: 2130.2979635646016
+          maiac_Column_WV_var: 547929.7044424328
+          maiac_AOD_QA_mean: 2057.777156114242
+          maiac_AOD_QA_var: 3252131.510000303
+          maiac_AOD_MODEL_mean: 7.997202468640877
+          maiac_AOD_MODEL_var: 0.003210113856187092
+          maiac_Injection_Height_mean: 492.9948970058508
+          maiac_Injection_Height_var: 10431.084913017246
+          misr_Aerosol_Optical_Depth_mean: 0.4709764022480026
+          misr_Aerosol_Optical_Depth_var: 0.0026699081095927476
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.060451696808824555
+          misr_Angstrom_Exponent_550_860nm_mean: 0.960183910711515
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.0025133519972916226
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.05287904208847158
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.24231852311284147
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.09105746802370779
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.1376033378122695
+          gfs_Wind speed (gust)_mean: 4.009843610322851
+          gfs_Wind speed (gust)_var: 0.7181625137125842
+          gfs_Haines Index_mean: 5.118476727785613
+          gfs_Haines Index_var: 0.09332393041842969
+          gfs_Surface pressure_mean: 98396.64366184767
+          gfs_Surface pressure_var: 9999.259401347761
+          gfs_Orography_mean: 216.0023295446198
+          gfs_Orography_var: 75.88376693308263
+          gfs_Temperature_mean: 298.65225620601564
+          gfs_Temperature_var: 4.508116282714313
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 0.0
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 0.0
+          gfs_Snow depth_mean: 0.0
+          gfs_Snow depth_var: 0.0
+          gfs_Percent frozen precipitation_mean: -46.77501785715925
+          gfs_Percent frozen precipitation_var: 47.12379760225671
+          gfs_Wilting Point_mean: 0.2437040188572807
+          gfs_Wilting Point_var: 0.013237502420075188
+          gfs_Field Capacity_mean: 0.3645510507172018
+          gfs_Field Capacity_var: 0.0016655937588151936
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 3.711510293204627
+          gfs_Surface lifted index_var: 0.35713171916627484
+          gfs_Convective available potential energy_mean: 201.70662905500706
+          gfs_Convective available potential energy_var: 7405.520294624668
+          gfs_Convective inhibition_mean: -34.80403343957525
+          gfs_Convective inhibition_var: 666.261314840934
+          gfs_Best (4-layer) lifted index_mean: 2.2849736420380777
+          gfs_Best (4-layer) lifted index_var: 0.19030716188685154
+          gfs_Planetary boundary layer height_mean: 257.84459005150484
+          gfs_Planetary boundary layer height_var: 14694.266788277702
+          gfs_Land-sea mask_mean: 1.0
+          gfs_Land-sea mask_var: 0.0
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 1.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.0
+          row_nan_count: 10.118476727785614
+  D7S1G:
+          maiac_Optical_Depth_047_mean: 928.6140657306071
+          maiac_Optical_Depth_047_var: 22848.426340929054
+          maiac_Optical_Depth_055_mean: 746.6645120117006
+          maiac_Optical_Depth_055_var: 15514.30435788716
+          maiac_AOD_Uncertainty_mean: 772.6036147937205
+          maiac_AOD_Uncertainty_var: 301870.4072246575
+          maiac_Column_WV_mean: 2120.232606390832
+          maiac_Column_WV_var: 464189.22183246457
+          maiac_AOD_QA_mean: 1907.9621965713368
+          maiac_AOD_QA_var: 3081046.0944428337
+          maiac_AOD_MODEL_mean: 7.991429780286568
+          maiac_AOD_MODEL_var: 0.009234330953138121
+          maiac_Injection_Height_mean: 335.532996446314
+          maiac_Injection_Height_var: 8819.771241846242
+          misr_Aerosol_Optical_Depth_mean: 0.49688781133374654
+          misr_Aerosol_Optical_Depth_var: 0.004541168170136322
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.0701377273847659
+          misr_Angstrom_Exponent_550_860nm_mean: 0.8940443961738466
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.002633323530882314
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.04539495549659738
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.24222561260601422
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.08788307198021256
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.16678291687590843
+          gfs_Wind speed (gust)_mean: 4.217964653005236
+          gfs_Wind speed (gust)_var: 0.6192926186291741
+          gfs_Haines Index_mean: 5.160369068541301
+          gfs_Haines Index_var: 0.07458260105448154
+          gfs_Surface pressure_mean: 98384.48760984183
+          gfs_Surface pressure_var: 9850.814762741666
+          gfs_Orography_mean: 214.4603178547891
+          gfs_Orography_var: 75.26268119507911
+          gfs_Temperature_mean: 298.9600999560633
+          gfs_Temperature_var: 5.108782952548337
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 0.0
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 0.0
+          gfs_Snow depth_mean: 0.0
+          gfs_Snow depth_var: 0.0
+          gfs_Percent frozen precipitation_mean: -46.95330135834867
+          gfs_Percent frozen precipitation_var: 38.50980777680141
+          gfs_Wilting Point_mean: 0.25979235404069895
+          gfs_Wilting Point_var: 0.013674977025483304
+          gfs_Field Capacity_mean: 0.3702534632570505
+          gfs_Field Capacity_var: 0.001721450385544802
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 3.519442926014664
+          gfs_Surface lifted index_var: 0.2785599736379613
+          gfs_Convective available potential energy_mean: 197.25702987697716
+          gfs_Convective available potential energy_var: 5379.786357644991
+          gfs_Convective inhibition_mean: -36.65268724170008
+          gfs_Convective inhibition_var: 622.9019167398947
+          gfs_Best (4-layer) lifted index_mean: 2.007419313990588
+          gfs_Best (4-layer) lifted index_var: 0.12312609841827767
+          gfs_Planetary boundary layer height_mean: 263.9073867234698
+          gfs_Planetary boundary layer height_var: 16553.082017574696
+          gfs_Land-sea mask_mean: 1.0
+          gfs_Land-sea mask_var: 0.0
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 1.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.0
+          row_nan_count: 10.152899824253076
+  E2AUK:
+          maiac_Optical_Depth_047_mean: 900.3024452447892
+          maiac_Optical_Depth_047_var: 27340.09331376966
+          maiac_Optical_Depth_055_mean: 723.1124933004379
+          maiac_Optical_Depth_055_var: 18500.60129332009
+          maiac_AOD_Uncertainty_mean: 629.5400823812569
+          maiac_AOD_Uncertainty_var: 242991.25115490286
+          maiac_Column_WV_mean: 2117.258899763253
+          maiac_Column_WV_var: 487626.76334392675
+          maiac_AOD_QA_mean: 2086.1847282747253
+          maiac_AOD_QA_var: 3099802.5545903305
+          maiac_AOD_MODEL_mean: 7.993281249701977
+          maiac_AOD_MODEL_var: 0.006179687307662052
+          maiac_Injection_Height_mean: 350.9540776321328
+          maiac_Injection_Height_var: 8417.567076223642
+          misr_Aerosol_Optical_Depth_mean: 0.45595439949656946
+          misr_Aerosol_Optical_Depth_var: 0.0050678496581860084
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.0638157857376766
+          misr_Angstrom_Exponent_550_860nm_mean: 1.0539847776546316
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.001907808493990004
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.036937818728324176
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.24088122481006688
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.07983338552200568
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.13524283032264492
+          gfs_Wind speed (gust)_mean: 4.0086830784247605
+          gfs_Wind speed (gust)_var: 0.9143608652900689
+          gfs_Haines Index_mean: 5.2047197640118
+          gfs_Haines Index_var: 0.0967551622418879
+          gfs_Surface pressure_mean: 98395.40267699116
+          gfs_Surface pressure_var: 4420.49598426746
+          gfs_Orography_mean: 219.99411211744095
+          gfs_Orography_var: 32.97348593903635
+          gfs_Temperature_mean: 297.80033662599095
+          gfs_Temperature_var: 4.660900688298922
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 0.0
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 0.0
+          gfs_Snow depth_mean: 0.0
+          gfs_Snow depth_var: 0.0
+          gfs_Percent frozen precipitation_mean: -46.85770521855988
+          gfs_Percent frozen precipitation_var: 52.13327138643069
+          gfs_Wilting Point_mean: 0.21573465965158461
+          gfs_Wilting Point_var: 0.018532424279744338
+          gfs_Field Capacity_mean: 0.35463583178494873
+          gfs_Field Capacity_var: 0.002332201113569263
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 4.435519243988669
+          gfs_Surface lifted index_var: 0.47029498525073743
+          gfs_Convective available potential energy_mean: 201.96371681415928
+          gfs_Convective available potential energy_var: 6859.315880039331
+          gfs_Convective inhibition_mean: -30.131241602714784
+          gfs_Convective inhibition_var: 620.9269719764011
+          gfs_Best (4-layer) lifted index_mean: 2.7660717732927442
+          gfs_Best (4-layer) lifted index_var: 0.21505260570304813
+          gfs_Planetary boundary layer height_mean: 248.91780079421324
+          gfs_Planetary boundary layer height_var: 18821.151386745332
+          gfs_Land-sea mask_mean: 1.0
+          gfs_Land-sea mask_var: 0.0
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 1.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.0
+          row_nan_count: 9.95221238938053
+  GAC6R:
+          maiac_Optical_Depth_047_mean: 926.9112152668259
+          maiac_Optical_Depth_047_var: 21853.561838944337
+          maiac_Optical_Depth_055_mean: 745.029636454138
+          maiac_Optical_Depth_055_var: 14814.589967036134
+          maiac_AOD_Uncertainty_mean: 504.8977686249049
+          maiac_AOD_Uncertainty_var: 104822.33903142356
+          maiac_Column_WV_mean: 2162.066778692062
+          maiac_Column_WV_var: 553928.9143021429
+          maiac_AOD_QA_mean: 2065.9880302361685
+          maiac_AOD_QA_var: 2900363.7538609486
+          maiac_AOD_MODEL_mean: 7.995814204956433
+          maiac_AOD_MODEL_var: 0.004890277047144671
+          maiac_Injection_Height_mean: 276.28357323204597
+          maiac_Injection_Height_var: 12952.049142511587
+          misr_Aerosol_Optical_Depth_mean: 0.468053298142667
+          misr_Aerosol_Optical_Depth_var: 0.0023708815203032814
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.06164168904069806
+          misr_Angstrom_Exponent_550_860nm_mean: 0.9717706393163937
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.002254788893249188
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.035561239326713
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.24224119085388687
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.08846702120969821
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.1373480864702007
+          gfs_Wind speed (gust)_mean: 4.076142371839166
+          gfs_Wind speed (gust)_var: 0.9739847590953788
+          gfs_Haines Index_mean: 5.154867256637168
+          gfs_Haines Index_var: 0.10535889872173058
+          gfs_Surface pressure_mean: 98387.72531895281
+          gfs_Surface pressure_var: 4119.845128810222
+          gfs_Orography_mean: 221.2533451903577
+          gfs_Orography_var: 30.47903402163222
+          gfs_Temperature_mean: 297.39035308927913
+          gfs_Temperature_var: 6.6993702064896805
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 0.0
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 0.0
+          gfs_Snow depth_mean: 0.0
+          gfs_Snow depth_var: 0.0
+          gfs_Percent frozen precipitation_mean: -46.96711524805839
+          gfs_Percent frozen precipitation_var: 59.63875663716815
+          gfs_Wilting Point_mean: 0.21573465965158461
+          gfs_Wilting Point_var: 0.018532424279744338
+          gfs_Field Capacity_mean: 0.35463583178494873
+          gfs_Field Capacity_var: 0.002332201113569263
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 4.443543224503509
+          gfs_Surface lifted index_var: 0.4526376597836775
+          gfs_Convective available potential energy_mean: 188.4896755162242
+          gfs_Convective available potential energy_var: 7394.2873156342175
+          gfs_Convective inhibition_mean: -32.27156033226171
+          gfs_Convective inhibition_var: 825.0956814159293
+          gfs_Best (4-layer) lifted index_mean: 2.7131496413689447
+          gfs_Best (4-layer) lifted index_var: 0.23356882989183878
+          gfs_Planetary boundary layer height_mean: 241.61433277375434
+          gfs_Planetary boundary layer height_var: 22639.72253923304
+          gfs_Land-sea mask_mean: 1.0
+          gfs_Land-sea mask_var: 0.0
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 1.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.0
+          row_nan_count: 10.384070796460177
+  GJLB2:
+          maiac_Optical_Depth_047_mean: 887.2686147605918
+          maiac_Optical_Depth_047_var: 24040.227443902477
+          maiac_Optical_Depth_055_mean: 712.0628894794721
+          maiac_Optical_Depth_055_var: 16286.531806837897
+          maiac_AOD_Uncertainty_mean: 491.9030721748825
+          maiac_AOD_Uncertainty_var: 108877.05822686845
+          maiac_Column_WV_mean: 2057.430200742786
+          maiac_Column_WV_var: 504180.2681268288
+          maiac_AOD_QA_mean: 1982.6579499337527
+          maiac_AOD_QA_var: 2887941.859710371
+          maiac_AOD_MODEL_mean: 7.996871945445489
+          maiac_AOD_MODEL_var: 0.002919518532500977
+          maiac_Injection_Height_mean: 405.64600275798017
+          maiac_Injection_Height_var: 7607.67202008595
+          misr_Aerosol_Optical_Depth_mean: 0.4734895985667445
+          misr_Aerosol_Optical_Depth_var: 0.005695047632586228
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.05798368035432165
+          misr_Angstrom_Exponent_550_860nm_mean: 1.093948115070327
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.0017807109610649137
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.04073422587723194
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.26452382528731805
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.09197504432997154
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.11699325435583578
+          gfs_Wind speed (gust)_mean: 3.993971619914935
+          gfs_Wind speed (gust)_var: 0.9661052114060965
+          gfs_Haines Index_mean: 5.1687315634218285
+          gfs_Haines Index_var: 0.09941002949852507
+          gfs_Surface pressure_mean: 98378.23291851033
+          gfs_Surface pressure_var: 20836.462882989144
+          gfs_Orography_mean: 222.62912573746317
+          gfs_Orography_var: 164.19291248770898
+          gfs_Temperature_mean: 297.6441713982416
+          gfs_Temperature_var: 4.9327944936086565
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 0.0
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 0.0
+          gfs_Snow depth_mean: 0.0
+          gfs_Snow depth_var: 0.0
+          gfs_Percent frozen precipitation_mean: -47.194755366052505
+          gfs_Percent frozen precipitation_var: 46.841596853490664
+          gfs_Wilting Point_mean: 0.21568274225555686
+          gfs_Wilting Point_var: 0.01852894825221238
+          gfs_Field Capacity_mean: 0.35461739527159375
+          gfs_Field Capacity_var: 0.0023317702458209833
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 4.479403937235695
+          gfs_Surface lifted index_var: 0.5077777777777778
+          gfs_Convective available potential energy_mean: 197.03392330383483
+          gfs_Convective available potential energy_var: 6582.595132743363
+          gfs_Convective inhibition_mean: -30.569926793821438
+          gfs_Convective inhibition_var: 689.3558697148476
+          gfs_Best (4-layer) lifted index_mean: 2.8152440582545455
+          gfs_Best (4-layer) lifted index_var: 0.2112615535889872
+          gfs_Planetary boundary layer height_mean: 245.5812760351851
+          gfs_Planetary boundary layer height_var: 18490.464206096363
+          gfs_Land-sea mask_mean: 1.0
+          gfs_Land-sea mask_var: 0.0
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 1.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.0
+          row_nan_count: 9.690265486725664
+  HANW9:
+          maiac_Optical_Depth_047_mean: 903.4568608760834
+          maiac_Optical_Depth_047_var: 21672.622432970507
+          maiac_Optical_Depth_055_mean: 725.5844402551651
+          maiac_Optical_Depth_055_var: 14705.630846027081
+          maiac_AOD_Uncertainty_mean: 418.0910638081942
+          maiac_AOD_Uncertainty_var: 72502.80458416975
+          maiac_Column_WV_mean: 2036.2852587372818
+          maiac_Column_WV_var: 510450.48056339205
+          maiac_AOD_QA_mean: 2100.6508864292996
+          maiac_AOD_QA_var: 2917902.0514703784
+          maiac_AOD_MODEL_mean: 7.994078946113587
+          maiac_AOD_MODEL_var: 0.006232686426908973
+          maiac_Injection_Height_mean: 419.45563909377177
+          maiac_Injection_Height_var: 7296.835293093202
+          misr_Aerosol_Optical_Depth_mean: 0.4635845897804706
+          misr_Aerosol_Optical_Depth_var: 0.003839560917688993
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.055613517479270375
+          misr_Angstrom_Exponent_550_860nm_mean: 1.006880527242608
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.0017765157768867364
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.03882889803541703
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.23956340913652277
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.08707161993856341
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.13695261325823874
+          gfs_Wind speed (gust)_mean: 4.1551591935032794
+          gfs_Wind speed (gust)_var: 0.5629507643884892
+          gfs_Haines Index_mean: 5.1897482014388485
+          gfs_Haines Index_var: 0.07801258992805754
+          gfs_Surface pressure_mean: 98392.85853192446
+          gfs_Surface pressure_var: 5906.539856115105
+          gfs_Orography_mean: 221.0304778481902
+          gfs_Orography_var: 44.76464748201433
+          gfs_Temperature_mean: 298.8156407637562
+          gfs_Temperature_var: 2.9616029676259013
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 0.0
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 0.0
+          gfs_Snow depth_mean: 0.0
+          gfs_Snow depth_var: 0.0
+          gfs_Percent frozen precipitation_mean: -46.897308261789014
+          gfs_Percent frozen precipitation_var: 42.42439523381296
+          gfs_Wilting Point_mean: 0.29072607802795847
+          gfs_Wilting Point_var: 0.010916226299460433
+          gfs_Field Capacity_mean: 0.38124455048266065
+          gfs_Field Capacity_var: 0.0013728130631744603
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 4.290792338968181
+          gfs_Surface lifted index_var: 0.252603417266187
+          gfs_Convective available potential energy_mean: 196.3857913669065
+          gfs_Convective available potential energy_var: 4570.042940647482
+          gfs_Convective inhibition_mean: -29.384507235520175
+          gfs_Convective inhibition_var: 487.28794289568344
+          gfs_Best (4-layer) lifted index_mean: 2.7945933321397085
+          gfs_Best (4-layer) lifted index_var: 0.1422392086330935
+          gfs_Planetary boundary layer height_mean: 310.0479961521506
+          gfs_Planetary boundary layer height_var: 8473.719335971222
+          gfs_Land-sea mask_mean: 1.0
+          gfs_Land-sea mask_var: 0.0
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 1.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.0
+          row_nan_count: 10.111510791366907
+  HM74A:
+          maiac_Optical_Depth_047_mean: 886.9075531084716
+          maiac_Optical_Depth_047_var: 27334.852643134906
+          maiac_Optical_Depth_055_mean: 712.218311566099
+          maiac_Optical_Depth_055_var: 18483.207341400623
+          maiac_AOD_Uncertainty_mean: 636.9431249547888
+          maiac_AOD_Uncertainty_var: 160835.066978033
+          maiac_Column_WV_mean: 2064.835247532928
+          maiac_Column_WV_var: 518003.9223480418
+          maiac_AOD_QA_mean: 2137.2698198106555
+          maiac_AOD_QA_var: 3259334.1718500704
+          maiac_AOD_MODEL_mean: 7.992642524630525
+          maiac_AOD_MODEL_var: 0.00770669937257303
+          maiac_Injection_Height_mean: 409.5939054725194
+          maiac_Injection_Height_var: 7805.6347426360035
+          misr_Aerosol_Optical_Depth_mean: 0.45951167834321344
+          misr_Aerosol_Optical_Depth_var: 0.00504617866548945
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.05991902638696072
+          misr_Angstrom_Exponent_550_860nm_mean: 0.9400155159432119
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.002596460804649287
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.0479924507332804
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.23609389605249945
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.08712462361949659
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.1362960636505754
+          gfs_Wind speed (gust)_mean: 4.068720156159787
+          gfs_Wind speed (gust)_var: 0.48625092592592595
+          gfs_Haines Index_mean: 5.13
+          gfs_Haines Index_var: 0.07509259259259257
+          gfs_Surface pressure_mean: 98382.76712037038
+          gfs_Surface pressure_var: 6258.047999999998
+          gfs_Orography_mean: 219.97249525462968
+          gfs_Orography_var: 47.91718399999997
+          gfs_Temperature_mean: 299.24185449218754
+          gfs_Temperature_var: 2.781425925925928
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 0.0
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 0.0
+          gfs_Snow depth_mean: 0.0
+          gfs_Snow depth_var: 0.0
+          gfs_Percent frozen precipitation_mean: -46.686117214626734
+          gfs_Percent frozen precipitation_var: 38.33545092592593
+          gfs_Wilting Point_mean: 0.2892629990912543
+          gfs_Wilting Point_var: 0.011034097275
+          gfs_Field Capacity_mean: 0.38072499273003463
+          gfs_Field Capacity_var: 0.001387865425
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 3.7946605993200233
+          gfs_Surface lifted index_var: 0.22981666666666667
+          gfs_Convective available potential energy_mean: 208.79148148148147
+          gfs_Convective available potential energy_var: 4403.265648148148
+          gfs_Convective inhibition_mean: -30.921335937499997
+          gfs_Convective inhibition_var: 449.5010592592593
+          gfs_Best (4-layer) lifted index_mean: 2.4357945940936054
+          gfs_Best (4-layer) lifted index_var: 0.12885
+          gfs_Planetary boundary layer height_mean: 298.5825924171731
+          gfs_Planetary boundary layer height_var: 7935.1255442962965
+          gfs_Land-sea mask_mean: 1.0
+          gfs_Land-sea mask_var: 0.0
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 1.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.0
+          row_nan_count: 10.20888888888889
+  KZ9W9:
+          maiac_Optical_Depth_047_mean: 908.9668864506046
+          maiac_Optical_Depth_047_var: 26037.862343229383
+          maiac_Optical_Depth_055_mean: 730.325430125725
+          maiac_Optical_Depth_055_var: 17672.765103330938
+          maiac_AOD_Uncertainty_mean: 593.1328128089367
+          maiac_AOD_Uncertainty_var: 189394.3155653162
+          maiac_Column_WV_mean: 2016.4629223018148
+          maiac_Column_WV_var: 494170.6805261863
+          maiac_AOD_QA_mean: 2136.2775111937185
+          maiac_AOD_QA_var: 2954503.5870526778
+          maiac_AOD_MODEL_mean: 7.991595528474668
+          maiac_AOD_MODEL_var: 0.003925169592924456
+          maiac_Injection_Height_mean: 359.69014846885597
+          maiac_Injection_Height_var: 8205.812974876795
+          misr_Aerosol_Optical_Depth_mean: 0.4583531396353946
+          misr_Aerosol_Optical_Depth_var: 0.003224269419707529
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.06108481063343142
+          misr_Angstrom_Exponent_550_860nm_mean: 0.9837147409425062
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.0016624187377006635
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.04033846714369511
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.2468425265568144
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.08815123914631409
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.12336207921890648
+          gfs_Wind speed (gust)_mean: 4.1811687845062435
+          gfs_Wind speed (gust)_var: 0.5602519806338029
+          gfs_Haines Index_mean: 5.185299295774648
+          gfs_Haines Index_var: 0.07757482394366197
+          gfs_Surface pressure_mean: 98381.03054027288
+          gfs_Surface pressure_var: 5912.866478873239
+          gfs_Orography_mean: 221.0403915534221
+          gfs_Orography_var: 44.73510704225346
+          gfs_Temperature_mean: 298.92398359271846
+          gfs_Temperature_var: 2.9592385563380303
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 0.0
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 0.0
+          gfs_Snow depth_mean: 0.0
+          gfs_Snow depth_var: 0.0
+          gfs_Percent frozen precipitation_mean: -46.63834237112126
+          gfs_Percent frozen precipitation_var: 42.10913402288734
+          gfs_Wilting Point_mean: 0.2907397876175356
+          gfs_Wilting Point_var: 0.010915121804577465
+          gfs_Field Capacity_mean: 0.38124941889803166
+          gfs_Field Capacity_var: 0.0013726720169454224
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 4.197754173547449
+          gfs_Surface lifted index_var: 0.2499735915492958
+          gfs_Convective available potential energy_mean: 200.38952464788733
+          gfs_Convective available potential energy_var: 4546.704115316901
+          gfs_Convective inhibition_mean: -29.144765139297704
+          gfs_Convective inhibition_var: 483.92875660211257
+          gfs_Best (4-layer) lifted index_mean: 2.71717365829038
+          gfs_Best (4-layer) lifted index_var: 0.14093529929577464
+          gfs_Planetary boundary layer height_mean: 312.70953403096803
+          gfs_Planetary boundary layer height_var: 8601.668892957745
+          gfs_Land-sea mask_mean: 1.0
+          gfs_Land-sea mask_var: 0.0
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 1.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.0
+          row_nan_count: 10.922535211267606
+  P8JA5:
+          maiac_Optical_Depth_047_mean: 896.9751827421643
+          maiac_Optical_Depth_047_var: 18110.3203522757
+          maiac_Optical_Depth_055_mean: 720.7150443031675
+          maiac_Optical_Depth_055_var: 12319.606838529162
+          maiac_AOD_Uncertainty_mean: 546.52476505745
+          maiac_AOD_Uncertainty_var: 123563.30987971637
+          maiac_Column_WV_mean: 2115.982013252344
+          maiac_Column_WV_var: 523728.80864489934
+          maiac_AOD_QA_mean: 1990.1463029521713
+          maiac_AOD_QA_var: 3562199.7390096853
+          maiac_AOD_MODEL_mean: 7.990025740578061
+          maiac_AOD_MODEL_var: 0.005678459101707135
+          maiac_Injection_Height_mean: 460.8464310787342
+          maiac_Injection_Height_var: 6603.711687327749
+          misr_Aerosol_Optical_Depth_mean: 0.46826379746198654
+          misr_Aerosol_Optical_Depth_var: 0.002325074551293494
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.059125261312564334
+          misr_Angstrom_Exponent_550_860nm_mean: 0.9870730533463056
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.0024308826817653804
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.04931365385208825
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.24058599941066053
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.08867646905318753
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.13900434037624684
+          gfs_Wind speed (gust)_mean: 4.053004232521252
+          gfs_Wind speed (gust)_var: 0.7178401122019635
+          gfs_Haines Index_mean: 5.124590930341281
+          gfs_Haines Index_var: 0.09221598877980365
+          gfs_Surface pressure_mean: 98396.56336489014
+          gfs_Surface pressure_var: 10064.406320710621
+          gfs_Orography_mean: 215.8705545633181
+          gfs_Orography_var: 76.43581137603245
+          gfs_Temperature_mean: 298.79059143209076
+          gfs_Temperature_var: 4.455615162848687
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 0.0
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 0.0
+          gfs_Snow depth_mean: 0.0
+          gfs_Snow depth_var: 0.0
+          gfs_Percent frozen precipitation_mean: -46.928991610762
+          gfs_Percent frozen precipitation_var: 45.427381954184206
+          gfs_Wilting Point_mean: 0.24330231330518468
+          gfs_Wilting Point_var: 0.013263956356942462
+          gfs_Field Capacity_mean: 0.3644084783909865
+          gfs_Field Capacity_var: 0.0016689523083216048
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 3.6140065172221294
+          gfs_Surface lifted index_var: 0.35410628019323676
+          gfs_Convective available potential energy_mean: 205.40626460963068
+          gfs_Convective available potential energy_var: 7629.868240610878
+          gfs_Convective inhibition_mean: -36.143245203019084
+          gfs_Convective inhibition_var: 659.0476823281908
+          gfs_Best (4-layer) lifted index_mean: 2.1954176090877153
+          gfs_Best (4-layer) lifted index_var: 0.18766947171575504
+          gfs_Planetary boundary layer height_mean: 260.1507554731329
+          gfs_Planetary boundary layer height_var: 14646.663751908993
+          gfs_Land-sea mask_mean: 1.0
+          gfs_Land-sea mask_var: 0.0
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 1.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.0
+          row_nan_count: 10.461430575035063
+  PJNW1:
+          maiac_Optical_Depth_047_mean: 1114.0124519348144
+          maiac_Optical_Depth_047_var: 23774.46309904093
+          maiac_Optical_Depth_055_mean: 899.6712418556214
+          maiac_Optical_Depth_055_var: 16188.0813103344
+          maiac_AOD_Uncertainty_mean: 515.8564943440755
+          maiac_AOD_Uncertainty_var: 92241.05997490018
+          maiac_Column_WV_mean: 1929.8873178366846
+          maiac_Column_WV_var: 446062.5713715295
+          maiac_AOD_QA_mean: 2194.066191813151
+          maiac_AOD_QA_var: 3127398.3182283444
+          maiac_AOD_MODEL_mean: 8.0
+          maiac_AOD_MODEL_var: 0.0
+          maiac_Injection_Height_mean: 384.83636313218335
+          maiac_Injection_Height_var: 9924.451176527318
+          misr_Aerosol_Optical_Depth_mean: 0.5112241861668039
+          misr_Aerosol_Optical_Depth_var: 0.004425412440464348
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.06353728306737348
+          misr_Angstrom_Exponent_550_860nm_mean: 0.7964224257367722
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.002276250615745685
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.0384444907862455
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.2229853900189095
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.08360572829049949
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.20463790903066068
+          gfs_Wind speed (gust)_mean: 4.055829473973174
+          gfs_Wind speed (gust)_var: 0.5035625
+          gfs_Haines Index_mean: 5.016666666666667
+          gfs_Haines Index_var: 0.11166666666666666
+          gfs_Surface pressure_mean: 98575.46597916665
+          gfs_Surface pressure_var: 6479.610666666654
+          gfs_Orography_mean: 219.76037773437497
+          gfs_Orography_var: 48.54923733333328
+          gfs_Temperature_mean: 297.8667779134115
+          gfs_Temperature_var: 2.566204166666664
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 0.0
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 0.0
+          gfs_Snow depth_mean: 0.0
+          gfs_Snow depth_var: 0.0
+          gfs_Percent frozen precipitation_mean: -46.194839436848966
+          gfs_Percent frozen precipitation_var: 66.71705416666668
+          gfs_Wilting Point_mean: 0.2889696663309734
+          gfs_Wilting Point_var: 0.011057729275000002
+          gfs_Field Capacity_mean: 0.38062083064778646
+          gfs_Field Capacity_var: 0.001390883279166667
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 3.919994069417318
+          gfs_Surface lifted index_var: 0.1849875
+          gfs_Convective available potential energy_mean: 211.71666666666667
+          gfs_Convective available potential energy_var: 4202.0216666666665
+          gfs_Convective inhibition_mean: -25.62290568033854
+          gfs_Convective inhibition_var: 491.5436666666667
+          gfs_Best (4-layer) lifted index_mean: 2.4559468841552734
+          gfs_Best (4-layer) lifted index_var: 0.10577499999999998
+          gfs_Planetary boundary layer height_mean: 281.03094053548176
+          gfs_Planetary boundary layer height_var: 5898.624560000001
+          gfs_Land-sea mask_mean: 1.0
+          gfs_Land-sea mask_var: 0.0
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 1.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.0
+          row_nan_count: 11.66
+  7F1D1:
+          maiac_Optical_Depth_047_mean: 807.2985590421237
+          maiac_Optical_Depth_047_var: 24037.02792389277
+          maiac_Optical_Depth_055_mean: 647.4068377568171
+          maiac_Optical_Depth_055_var: 16322.390780774718
+          maiac_AOD_Uncertainty_mean: 717.3585341668899
+          maiac_AOD_Uncertainty_var: 308476.5880052547
+          maiac_Column_WV_mean: 2139.801388894358
+          maiac_Column_WV_var: 516305.62141534657
+          maiac_AOD_QA_mean: 1900.202790044969
+          maiac_AOD_QA_var: 3265194.6425873986
+          maiac_AOD_MODEL_mean: 7.9743589743589745
+          maiac_AOD_MODEL_var: 0.0
+          maiac_Injection_Height_mean: 486.44014835357666
+          maiac_Injection_Height_var: 9050.864721892083
+          misr_Aerosol_Optical_Depth_mean: 0.48062336262391536
+          misr_Aerosol_Optical_Depth_var: 0.0027298570591461164
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.06387773832800434
+          misr_Angstrom_Exponent_550_860nm_mean: 0.9230886892396577
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.0032110058616998264
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.09724416803302506
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.24196452297726456
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.09469185054910423
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.14396974961368397
+          gfs_Wind speed (gust)_mean: 3.7034797064840776
+          gfs_Wind speed (gust)_var: 0.3298235887096774
+          gfs_Haines Index_mean: 4.981854838709677
+          gfs_Haines Index_var: 0.06804435483870964
+          gfs_Surface pressure_mean: 98335.94286794355
+          gfs_Surface pressure_var: 7835.07354838709
+          gfs_Orography_mean: 215.13626386088706
+          gfs_Orography_var: 62.32800000000011
+          gfs_Temperature_mean: 301.2068831905242
+          gfs_Temperature_var: 2.1488558467741945
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 0.0
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 0.0
+          gfs_Snow depth_mean: 0.0
+          gfs_Snow depth_var: 0.0
+          gfs_Percent frozen precipitation_mean: -46.49234481319303
+          gfs_Percent frozen precipitation_var: 23.199707661290326
+          gfs_Wilting Point_mean: 0.2825750000000001
+          gfs_Wilting Point_var: 0.011572906874999999
+          gfs_Field Capacity_mean: 0.37834999999999985
+          gfs_Field Capacity_var: 0.0014566725
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 1.8995005576841295
+          gfs_Surface lifted index_var: 0.14224798387096774
+          gfs_Convective available potential energy_mean: 256.0766129032258
+          gfs_Convective available potential energy_var: 4475.857862903225
+          gfs_Convective inhibition_mean: -42.0220939390121
+          gfs_Convective inhibition_var: 290.9540473790323
+          gfs_Best (4-layer) lifted index_mean: 0.8752480353078534
+          gfs_Best (4-layer) lifted index_var: 0.07595766129032254
+          gfs_Planetary boundary layer height_mean: 243.97586592151274
+          gfs_Planetary boundary layer height_var: 6268.350129032257
+          gfs_Land-sea mask_mean: 1.0
+          gfs_Land-sea mask_var: 0.0
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 1.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.0
+          row_nan_count: 9.314516129032258
+  GVQXS:
+          maiac_Optical_Depth_047_mean: 896.8151863988886
+          maiac_Optical_Depth_047_var: 22913.588568316856
+          maiac_Optical_Depth_055_mean: 721.0363932382031
+          maiac_Optical_Depth_055_var: 15566.264233993224
+          maiac_AOD_Uncertainty_mean: 558.492470167879
+          maiac_AOD_Uncertainty_var: 122438.82925717793
+          maiac_Column_WV_mean: 2133.0217114833886
+          maiac_Column_WV_var: 468640.9697181175
+          maiac_AOD_QA_mean: 2062.876362809511
+          maiac_AOD_QA_var: 3488109.4338062755
+          maiac_AOD_MODEL_mean: 7.974860167140283
+          maiac_AOD_MODEL_var: 0.010182257243350536
+          maiac_Injection_Height_mean: 458.9875868797302
+          maiac_Injection_Height_var: 8888.19032128827
+          misr_Aerosol_Optical_Depth_mean: 0.48726242920005225
+          misr_Aerosol_Optical_Depth_var: 0.005186512641442448
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.06522678332479014
+          misr_Angstrom_Exponent_550_860nm_mean: 0.9217144332038678
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.002216866688572188
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.06391694433078529
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.25005689231542555
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.10013265339506223
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.13707571074639147
+          gfs_Wind speed (gust)_mean: 4.12138441590198
+          gfs_Wind speed (gust)_var: 0.5174990264797508
+          gfs_Haines Index_mean: 5.1985981308411215
+          gfs_Haines Index_var: 0.07340342679127725
+          gfs_Surface pressure_mean: 98340.76645249221
+          gfs_Surface pressure_var: 6332.637009345788
+          gfs_Orography_mean: 219.7354019117504
+          gfs_Orography_var: 48.62366604361368
+          gfs_Temperature_mean: 300.1622978234217
+          gfs_Temperature_var: 2.670588006230531
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 0.0
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 0.0
+          gfs_Snow depth_mean: 0.0
+          gfs_Snow depth_var: 0.0
+          gfs_Percent frozen precipitation_mean: -46.945294265509396
+          gfs_Percent frozen precipitation_var: 39.45586545950157
+          gfs_Wilting Point_mean: 0.28893512377397285
+          gfs_Wilting Point_var: 0.01106051210864486
+          gfs_Field Capacity_mean: 0.3806085602852413
+          gfs_Field Capacity_var: 0.001391238652647975
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 3.10443238706975
+          gfs_Surface lifted index_var: 0.22231308411214953
+          gfs_Convective available potential energy_mean: 218.75467289719626
+          gfs_Convective available potential energy_var: 4620.654205607477
+          gfs_Convective inhibition_mean: -35.186322705990804
+          gfs_Convective inhibition_var: 470.9986614096573
+          gfs_Best (4-layer) lifted index_mean: 1.8577114913322479
+          gfs_Best (4-layer) lifted index_var: 0.12378894080996881
+          gfs_Planetary boundary layer height_mean: 306.1413253280307
+          gfs_Planetary boundary layer height_var: 8230.76324859813
+          gfs_Land-sea mask_mean: 1.0
+          gfs_Land-sea mask_var: 0.0
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 1.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.0
+          row_nan_count: 9.909657320872274
+  WZNCR:
+          maiac_Optical_Depth_047_mean: 800.7085204727348
+          maiac_Optical_Depth_047_var: 19962.739486221366
+          maiac_Optical_Depth_055_mean: 643.1448059958973
+          maiac_Optical_Depth_055_var: 13441.375360553839
+          maiac_AOD_Uncertainty_mean: 431.15748995267427
+          maiac_AOD_Uncertainty_var: 54970.81016427815
+          maiac_Column_WV_mean: 2217.504451575646
+          maiac_Column_WV_var: 500066.48211243784
+          maiac_AOD_QA_mean: 1972.1877755385178
+          maiac_AOD_QA_var: 4174559.399421356
+          maiac_AOD_MODEL_mean: 7.971034482977856
+          maiac_AOD_MODEL_var: 0.019880461119982568
+          maiac_Injection_Height_mean: 541.2479881004051
+          maiac_Injection_Height_var: 8147.759016891482
+          misr_Aerosol_Optical_Depth_mean: 0.5122950300574303
+          misr_Aerosol_Optical_Depth_var: 0.001150161331830125
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.06075104922056194
+          misr_Angstrom_Exponent_550_860nm_mean: 0.9181104138493538
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.0033014254819135726
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.10653099340852346
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.24195275790989396
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.10674553550779815
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.16359987221658226
+          gfs_Wind speed (gust)_mean: 3.6377930445669118
+          gfs_Wind speed (gust)_var: 0.30464903846153846
+          gfs_Haines Index_mean: 4.986538461538461
+          gfs_Haines Index_var: 0.06490384615384613
+          gfs_Surface pressure_mean: 98347.24185096154
+          gfs_Surface pressure_var: 7820.961230769228
+          gfs_Orography_mean: 215.13626382211535
+          gfs_Orography_var: 62.32800000000008
+          gfs_Temperature_mean: 301.2009325232873
+          gfs_Temperature_var: 2.133129807692309
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 0.0
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 0.0
+          gfs_Snow depth_mean: 0.0
+          gfs_Snow depth_var: 0.0
+          gfs_Percent frozen precipitation_mean: -46.48154456505409
+          gfs_Percent frozen precipitation_var: 26.490211538461544
+          gfs_Wilting Point_mean: 0.282575
+          gfs_Wilting Point_var: 0.011572906874999999
+          gfs_Field Capacity_mean: 0.37834999999999985
+          gfs_Field Capacity_var: 0.0014566725000000002
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 1.6222364396315354
+          gfs_Surface lifted index_var: 0.13148557692307689
+          gfs_Convective available potential energy_mean: 257.4230769230769
+          gfs_Convective available potential energy_var: 3444.5759615384613
+          gfs_Convective inhibition_mean: -45.73347290039062
+          gfs_Convective inhibition_var: 296.8206730769231
+          gfs_Best (4-layer) lifted index_mean: 0.7563648986816407
+          gfs_Best (4-layer) lifted index_var: 0.06371153846153843
+          gfs_Planetary boundary layer height_mean: 235.13122926682692
+          gfs_Planetary boundary layer height_var: 5533.669356923077
+          gfs_Land-sea mask_mean: 1.0
+          gfs_Land-sea mask_var: 0.0
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 1.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.0
+          row_nan_count: 9.8
+  6EIL6:
+          maiac_Optical_Depth_047_mean: 886.4470350338462
+          maiac_Optical_Depth_047_var: 17921.96212046734
+          maiac_Optical_Depth_055_mean: 712.0854178882036
+          maiac_Optical_Depth_055_var: 12097.726754057005
+          maiac_AOD_Uncertainty_mean: 602.723113042658
+          maiac_AOD_Uncertainty_var: 226414.10079795023
+          maiac_Column_WV_mean: 2226.775155746159
+          maiac_Column_WV_var: 539135.1718186124
+          maiac_AOD_QA_mean: 1867.5441910310226
+          maiac_AOD_QA_var: 3075599.899912701
+          maiac_AOD_MODEL_mean: 7.985959020468707
+          maiac_AOD_MODEL_var: 0.010329353114486704
+          maiac_Injection_Height_mean: 388.9922767296816
+          maiac_Injection_Height_var: 10961.474654334885
+          misr_Aerosol_Optical_Depth_mean: 0.49948353686236907
+          misr_Aerosol_Optical_Depth_var: 0.0029072981659361875
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.06253532227960278
+          misr_Angstrom_Exponent_550_860nm_mean: 1.0477425482656275
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.002005013428250008
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.04326477526254684
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.27014258969575167
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.0921899593335443
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.13715402162883292
+          gfs_Wind speed (gust)_mean: 4.106768752843597
+          gfs_Wind speed (gust)_var: 0.5153295454545455
+          gfs_Haines Index_mean: 5.179924242424242
+          gfs_Haines Index_var: 0.07604166666666665
+          gfs_Surface pressure_mean: 98303.66147727273
+          gfs_Surface pressure_var: 6177.8511515151495
+          gfs_Orography_mean: 220.0342020004735
+          gfs_Orography_var: 47.73331393939391
+          gfs_Temperature_mean: 300.3219419907079
+          gfs_Temperature_var: 2.6369696969696985
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 0.0
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 0.0
+          gfs_Snow depth_mean: 0.0
+          gfs_Snow depth_var: 0.0
+          gfs_Percent frozen precipitation_mean: -46.73333943684895
+          gfs_Percent frozen precipitation_var: 40.396412878787885
+          gfs_Wilting Point_mean: 0.28934833246635666
+          gfs_Wilting Point_var: 0.011027222511363637
+          gfs_Field Capacity_mean: 0.38075529609448977
+          gfs_Field Capacity_var: 0.001386987503787879
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 3.07551009091464
+          gfs_Surface lifted index_var: 0.23207670454545454
+          gfs_Convective available potential energy_mean: 219.96136363636364
+          gfs_Convective available potential energy_var: 4782.196590909091
+          gfs_Convective inhibition_mean: -34.75703770493016
+          gfs_Convective inhibition_var: 462.0574015151515
+          gfs_Best (4-layer) lifted index_mean: 1.8818685069228664
+          gfs_Best (4-layer) lifted index_var: 0.1355653409090909
+          gfs_Planetary boundary layer height_mean: 314.2249559363163
+          gfs_Planetary boundary layer height_var: 8928.713755757577
+          gfs_Land-sea mask_mean: 1.0
+          gfs_Land-sea mask_var: 0.0
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 1.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.0
+          row_nan_count: 10.787878787878787
+  78V83:
+          maiac_Optical_Depth_047_mean: 880.0367197742925
+          maiac_Optical_Depth_047_var: 20386.284269574367
+          maiac_Optical_Depth_055_mean: 706.6477520160608
+          maiac_Optical_Depth_055_var: 13764.40690477564
+          maiac_AOD_Uncertainty_mean: 504.02011756148994
+          maiac_AOD_Uncertainty_var: 113392.02767449657
+          maiac_Column_WV_mean: 2291.059881333986
+          maiac_Column_WV_var: 536491.0244160693
+          maiac_AOD_QA_mean: 1531.1537935743145
+          maiac_AOD_QA_var: 2233483.6026888923
+          maiac_AOD_MODEL_mean: 7.9866644700918235
+          maiac_AOD_MODEL_var: 0.007417834619410949
+          maiac_Injection_Height_mean: 308.3903390822872
+          maiac_Injection_Height_var: 5467.495521677009
+          misr_Aerosol_Optical_Depth_mean: 0.44797331969000703
+          misr_Aerosol_Optical_Depth_var: 0.002844336915689095
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.08025794280316094
+          misr_Angstrom_Exponent_550_860nm_mean: 1.0530491088856162
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.0014986230861013228
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.04521698357182084
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.2088286824998139
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.07680578994856756
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.16234254627084801
+          gfs_Wind speed (gust)_mean: 3.9826109088039683
+          gfs_Wind speed (gust)_var: 0.7272830882352941
+          gfs_Haines Index_mean: 5.262254901960785
+          gfs_Haines Index_var: 0.0704656862745098
+          gfs_Surface pressure_mean: 98321.79673406863
+          gfs_Surface pressure_var: 3230.1195294117624
+          gfs_Orography_mean: 219.46915686274517
+          gfs_Orography_var: 24.80936470588237
+          gfs_Temperature_mean: 298.0075481339997
+          gfs_Temperature_var: 2.957371323529415
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 0.0
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 0.0
+          gfs_Snow depth_mean: 0.0
+          gfs_Snow depth_var: 0.0
+          gfs_Percent frozen precipitation_mean: -46.96647669175092
+          gfs_Percent frozen precipitation_var: 45.93533333333334
+          gfs_Wilting Point_mean: 0.1418200970040116
+          gfs_Wilting Point_var: 0.011233482708333324
+          gfs_Field Capacity_mean: 0.32841126622817096
+          gfs_Field Capacity_var: 0.0014130958455881568
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 3.7196912922578695
+          gfs_Surface lifted index_var: 0.3047144607843137
+          gfs_Convective available potential energy_mean: 226.48676470588236
+          gfs_Convective available potential energy_var: 5920.24987745098
+          gfs_Convective inhibition_mean: -36.229567631740196
+          gfs_Convective inhibition_var: 485.81159803921565
+          gfs_Best (4-layer) lifted index_mean: 2.091260172526042
+          gfs_Best (4-layer) lifted index_var: 0.14136274509803917
+          gfs_Planetary boundary layer height_mean: 218.98000370998008
+          gfs_Planetary boundary layer height_var: 15006.67924235294
+          gfs_Land-sea mask_mean: 1.0
+          gfs_Land-sea mask_var: 0.0
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 1.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.0
+          row_nan_count: 10.85686274509804
+  AZJ0Z:
+          maiac_Optical_Depth_047_mean: 919.3268690926689
+          maiac_Optical_Depth_047_var: 22240.891150671658
+          maiac_Optical_Depth_055_mean: 739.4856719534738
+          maiac_Optical_Depth_055_var: 15082.733307105782
+          maiac_AOD_Uncertainty_mean: 561.4339102783204
+          maiac_AOD_Uncertainty_var: 138454.31061941452
+          maiac_Column_WV_mean: 2222.4184420658994
+          maiac_Column_WV_var: 556125.2878236974
+          maiac_AOD_QA_mean: 2008.665866748047
+          maiac_AOD_QA_var: 3033746.320867801
+          maiac_AOD_MODEL_mean: 7.9820411559513635
+          maiac_AOD_MODEL_var: 0.011768539123104306
+          maiac_Injection_Height_mean: 468.3287740540736
+          maiac_Injection_Height_var: 11656.044781992518
+          misr_Aerosol_Optical_Depth_mean: 0.4770004032325994
+          misr_Aerosol_Optical_Depth_var: 0.0047921017848356175
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.07048476454241108
+          misr_Angstrom_Exponent_550_860nm_mean: 0.9031292574567945
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.0024450266731022396
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.05089770622200364
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.23457310171261503
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.08646037889624995
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.15597033937564067
+          gfs_Wind speed (gust)_mean: 4.060320653611664
+          gfs_Wind speed (gust)_var: 0.7003831111111112
+          gfs_Haines Index_mean: 5.133333333333334
+          gfs_Haines Index_var: 0.09093333333333334
+          gfs_Surface pressure_mean: 98373.10132166668
+          gfs_Surface pressure_var: 10084.753521777788
+          gfs_Orography_mean: 215.87220133333332
+          gfs_Orography_var: 76.42891377777782
+          gfs_Temperature_mean: 299.222519186198
+          gfs_Temperature_var: 4.426689777777782
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 0.0
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 0.0
+          gfs_Snow depth_mean: 0.0
+          gfs_Snow depth_var: 0.0
+          gfs_Percent frozen precipitation_mean: -46.67029943684896
+          gfs_Percent frozen precipitation_var: 49.889110222222236
+          gfs_Wilting Point_mean: 0.2433073324593099
+          gfs_Wilting Point_var: 0.01326362582444441
+          gfs_Field Capacity_mean: 0.36441025967447915
+          gfs_Field Capacity_var: 0.0016689103444444044
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 3.076855133056641
+          gfs_Surface lifted index_var: 0.3311662222222222
+          gfs_Convective available potential energy_mean: 221.9408
+          gfs_Convective available potential energy_var: 7524.610666666667
+          gfs_Convective inhibition_mean: -38.0300372265625
+          gfs_Convective inhibition_var: 703.5236177777779
+          gfs_Best (4-layer) lifted index_mean: 1.7871781197102865
+          gfs_Best (4-layer) lifted index_var: 0.17422222222222222
+          gfs_Planetary boundary layer height_mean: 263.3061259824219
+          gfs_Planetary boundary layer height_var: 14386.408899982223
+          gfs_Land-sea mask_mean: 1.0
+          gfs_Land-sea mask_var: 0.0
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 1.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.0
+          row_nan_count: 10.9216
+  D72OT:
+          maiac_Optical_Depth_047_mean: 896.0805024015689
+          maiac_Optical_Depth_047_var: 23336.742582314164
+          maiac_Optical_Depth_055_mean: 719.9382591932833
+          maiac_Optical_Depth_055_var: 15777.449925083192
+          maiac_AOD_Uncertainty_mean: 583.7319723104501
+          maiac_AOD_Uncertainty_var: 123197.54845606038
+          maiac_Column_WV_mean: 2126.610753985149
+          maiac_Column_WV_var: 498837.92622210283
+          maiac_AOD_QA_mean: 2055.0031008937144
+          maiac_AOD_QA_var: 3125026.26975207
+          maiac_AOD_MODEL_mean: 7.985846585142398
+          maiac_AOD_MODEL_var: 0.010555165869824922
+          maiac_Injection_Height_mean: 422.47666948052904
+          maiac_Injection_Height_var: 11741.318402218694
+          misr_Aerosol_Optical_Depth_mean: 0.497484360363602
+          misr_Aerosol_Optical_Depth_var: 0.0017489801162833716
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.06848989168789173
+          misr_Angstrom_Exponent_550_860nm_mean: 0.913745395715724
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.0018156311688275473
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.05010290833920732
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.24682700255299142
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.09800147340833643
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.15265924880250215
+          gfs_Wind speed (gust)_mean: 4.144697396863533
+          gfs_Wind speed (gust)_var: 0.5262236201298701
+          gfs_Haines Index_mean: 5.1477272727272725
+          gfs_Haines Index_var: 0.07629870129870128
+          gfs_Surface pressure_mean: 98327.13431412337
+          gfs_Surface pressure_var: 6244.242597402589
+          gfs_Orography_mean: 219.92952167461442
+          gfs_Orography_var: 48.045236363636334
+          gfs_Temperature_mean: 300.09336096032877
+          gfs_Temperature_var: 2.6284263392857157
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 0.0
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 0.0
+          gfs_Snow depth_mean: 0.0
+          gfs_Snow depth_var: 0.0
+          gfs_Percent frozen precipitation_mean: -46.535720389229915
+          gfs_Percent frozen precipitation_var: 41.61584821428572
+          gfs_Wilting Point_mean: 0.2892035705566406
+          gfs_Wilting Point_var: 0.011038885056818182
+          gfs_Field Capacity_mean: 0.3807038891284496
+          gfs_Field Capacity_var: 0.0013884768344155846
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 3.014372031719654
+          gfs_Surface lifted index_var: 0.2263555194805195
+          gfs_Convective available potential energy_mean: 230.34862012987014
+          gfs_Convective available potential energy_var: 4919.733867694805
+          gfs_Convective inhibition_mean: -35.04124771712662
+          gfs_Convective inhibition_var: 463.68721590909104
+          gfs_Best (4-layer) lifted index_mean: 1.810376769226867
+          gfs_Best (4-layer) lifted index_var: 0.1265168425324675
+          gfs_Planetary boundary layer height_mean: 311.12866573581454
+          gfs_Planetary boundary layer height_var: 8182.231142207793
+          gfs_Land-sea mask_mean: 1.0
+          gfs_Land-sea mask_var: 0.0
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 1.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.0
+          row_nan_count: 11.212662337662337
+  NE7BV:
+          maiac_Optical_Depth_047_mean: 947.2371362638073
+          maiac_Optical_Depth_047_var: 26718.301170057985
+          maiac_Optical_Depth_055_mean: 761.7214427809088
+          maiac_Optical_Depth_055_var: 18095.71956391997
+          maiac_AOD_Uncertainty_mean: 616.8467716160666
+          maiac_AOD_Uncertainty_var: 159728.91078687398
+          maiac_Column_WV_mean: 2300.0251124474717
+          maiac_Column_WV_var: 565397.7698780014
+          maiac_AOD_QA_mean: 1900.6087593836542
+          maiac_AOD_QA_var: 3023592.158848879
+          maiac_AOD_MODEL_mean: 7.994465153424346
+          maiac_AOD_MODEL_var: 0.005592194763402916
+          maiac_Injection_Height_mean: 319.8267385482788
+          maiac_Injection_Height_var: 5961.785817153378
+          misr_Aerosol_Optical_Depth_mean: 0.4970741911327898
+          misr_Aerosol_Optical_Depth_var: 0.0033107951831628964
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.06820230505296157
+          misr_Angstrom_Exponent_550_860nm_mean: 0.989993257475604
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.0017298220712236387
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.04997727119597818
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.2452415682265324
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.09825133917087071
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.15358468247898688
+          gfs_Wind speed (gust)_mean: 3.907789186515126
+          gfs_Wind speed (gust)_var: 0.6776426518883416
+          gfs_Haines Index_mean: 5.108784893267652
+          gfs_Haines Index_var: 0.08056239737274219
+          gfs_Surface pressure_mean: 98349.73807984403
+          gfs_Surface pressure_var: 2217.9079146141135
+          gfs_Orography_mean: 217.0592679469417
+          gfs_Orography_var: 19.530727093596045
+          gfs_Temperature_mean: 297.44544220722366
+          gfs_Temperature_var: 4.202106937602631
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 0.0
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 0.0
+          gfs_Snow depth_mean: 0.0
+          gfs_Snow depth_var: 0.0
+          gfs_Percent frozen precipitation_mean: -46.84836406739083
+          gfs_Percent frozen precipitation_var: 57.5195669129721
+          gfs_Wilting Point_mean: 0.1474645311502792
+          gfs_Wilting Point_var: 0.013527002961822585
+          gfs_Field Capacity_mean: 0.33041908171454865
+          gfs_Field Capacity_var: 0.0017025967518472089
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 3.2923803984042266
+          gfs_Surface lifted index_var: 0.27335077996715923
+          gfs_Convective available potential energy_mean: 217.4987684729064
+          gfs_Convective available potential energy_var: 5788.1062192118225
+          gfs_Convective inhibition_mean: -41.62806534790641
+          gfs_Convective inhibition_var: 679.4456250000001
+          gfs_Best (4-layer) lifted index_mean: 1.7356881415706944
+          gfs_Best (4-layer) lifted index_var: 0.13879720853858782
+          gfs_Planetary boundary layer height_mean: 197.32288762836427
+          gfs_Planetary boundary layer height_var: 18008.721244663382
+          gfs_Land-sea mask_mean: 1.0
+          gfs_Land-sea mask_var: 0.0
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 1.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.0
+          row_nan_count: 10.627257799671593
+  S77YN:
+          maiac_Optical_Depth_047_mean: 898.8946403106513
+          maiac_Optical_Depth_047_var: 28382.246004010583
+          maiac_Optical_Depth_055_mean: 722.2851239463497
+          maiac_Optical_Depth_055_var: 19174.28616891265
+          maiac_AOD_Uncertainty_mean: 666.3442110228307
+          maiac_AOD_Uncertainty_var: 191065.14895848895
+          maiac_Column_WV_mean: 2178.499831015712
+          maiac_Column_WV_var: 525274.9445084303
+          maiac_AOD_QA_mean: 1923.4567988374088
+          maiac_AOD_QA_var: 2949408.03639649
+          maiac_AOD_MODEL_mean: 7.98748467285509
+          maiac_AOD_MODEL_var: 0.007251681290095841
+          maiac_Injection_Height_mean: 420.3358337305769
+          maiac_Injection_Height_var: 11269.568507929116
+          misr_Aerosol_Optical_Depth_mean: 0.45584581807716607
+          misr_Aerosol_Optical_Depth_var: 0.0025429424091467836
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.0652727124271626
+          misr_Angstrom_Exponent_550_860nm_mean: 0.9510699635006717
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.002230763486127726
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.03678393738401917
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.2271468104775419
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.07506134159282113
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.15364109416559488
+          gfs_Wind speed (gust)_mean: 4.131121672212442
+          gfs_Wind speed (gust)_var: 0.5148058252427185
+          gfs_Haines Index_mean: 5.148867313915858
+          gfs_Haines Index_var: 0.07787216828478963
+          gfs_Surface pressure_mean: 98324.88344963592
+          gfs_Surface pressure_var: 6264.066019417474
+          gfs_Orography_mean: 219.93460324383088
+          gfs_Orography_var: 48.03009449838186
+          gfs_Temperature_mean: 300.15126457337806
+          gfs_Temperature_var: 2.6382797330097105
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 0.0
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 0.0
+          gfs_Snow depth_mean: 0.0
+          gfs_Snow depth_var: 0.0
+          gfs_Percent frozen precipitation_mean: -46.465297365651544
+          gfs_Percent frozen precipitation_var: 41.4047289644013
+          gfs_Wilting Point_mean: 0.2892105978314544
+          gfs_Wilting Point_var: 0.011038318913834952
+          gfs_Field Capacity_mean: 0.3807063845933833
+          gfs_Field Capacity_var: 0.0013884045368122977
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 2.944992966636485
+          gfs_Surface lifted index_var: 0.22072613268608413
+          gfs_Convective available potential energy_mean: 229.35234627831716
+          gfs_Convective available potential energy_var: 4852.02093446602
+          gfs_Convective inhibition_mean: -36.06057865673671
+          gfs_Convective inhibition_var: 481.83819073624596
+          gfs_Best (4-layer) lifted index_mean: 1.768600742870936
+          gfs_Best (4-layer) lifted index_var: 0.12569579288025887
+          gfs_Planetary boundary layer height_mean: 309.92660452142115
+          gfs_Planetary boundary layer height_var: 8220.019220711974
+          gfs_Land-sea mask_mean: 1.0
+          gfs_Land-sea mask_var: 0.0
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 1.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.0
+          row_nan_count: 10.925566343042071
+  SZLMT:
+          maiac_Optical_Depth_047_mean: 889.748977715242
+          maiac_Optical_Depth_047_var: 22882.83307961796
+          maiac_Optical_Depth_055_mean: 714.8762237332392
+          maiac_Optical_Depth_055_var: 15452.982349624848
+          maiac_AOD_Uncertainty_mean: 656.804557301448
+          maiac_AOD_Uncertainty_var: 174606.09638389337
+          maiac_Column_WV_mean: 2087.693251946069
+          maiac_Column_WV_var: 513157.7649796007
+          maiac_AOD_QA_mean: 2044.2765293891614
+          maiac_AOD_QA_var: 3114495.7180842105
+          maiac_AOD_MODEL_mean: 7.981286417507956
+          maiac_AOD_MODEL_var: 0.010235751364768479
+          maiac_Injection_Height_mean: 409.9044657061177
+          maiac_Injection_Height_var: 8733.030802376592
+          misr_Aerosol_Optical_Depth_mean: 0.4970831755962637
+          misr_Aerosol_Optical_Depth_var: 0.0034092193400929315
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.0642933723620242
+          misr_Angstrom_Exponent_550_860nm_mean: 0.9561371359560225
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.0016597204129033347
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.045106487427579424
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.2573295737720198
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.10099774162000455
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.1387588981021609
+          gfs_Wind speed (gust)_mean: 4.299764114650092
+          gfs_Wind speed (gust)_var: 0.5786177884615386
+          gfs_Haines Index_mean: 5.219711538461539
+          gfs_Haines Index_var: 0.07776442307692308
+          gfs_Surface pressure_mean: 98313.36204927885
+          gfs_Surface pressure_var: 5961.065538461537
+          gfs_Orography_mean: 220.8266678185097
+          gfs_Orography_var: 45.37195384615378
+          gfs_Temperature_mean: 299.95420891394986
+          gfs_Temperature_var: 2.8348533653846175
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 0.0
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 0.0
+          gfs_Snow depth_mean: 0.0
+          gfs_Snow depth_var: 0.0
+          gfs_Percent frozen precipitation_mean: -46.67447725736178
+          gfs_Percent frozen precipitation_var: 43.37791706730769
+          gfs_Wilting Point_mean: 0.2904442297304594
+          gfs_Wilting Point_var: 0.010938933028846154
+          gfs_Field Capacity_mean: 0.38114446284367487
+          gfs_Field Capacity_var: 0.0013757127584134614
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 3.3722696656447195
+          gfs_Surface lifted index_var: 0.2473064903846154
+          gfs_Convective available potential energy_mean: 219.50865384615383
+          gfs_Convective available potential energy_var: 5136.9788461538465
+          gfs_Convective inhibition_mean: -33.85688554030199
+          gfs_Convective inhibition_var: 488.4243581730769
+          gfs_Best (4-layer) lifted index_mean: 2.024995976961576
+          gfs_Best (4-layer) lifted index_var: 0.13730288461538456
+          gfs_Planetary boundary layer height_mean: 325.97445778010444
+          gfs_Planetary boundary layer height_var: 8806.634423846153
+          gfs_Land-sea mask_mean: 1.0
+          gfs_Land-sea mask_var: 0.0
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 1.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.0
+          row_nan_count: 10.823076923076924
+  UC74Z:
+          maiac_Optical_Depth_047_mean: 878.2074843661886
+          maiac_Optical_Depth_047_var: 18446.621138781826
+          maiac_Optical_Depth_055_mean: 705.7836491759394
+          maiac_Optical_Depth_055_var: 12528.842200079614
+          maiac_AOD_Uncertainty_mean: 561.0162225636569
+          maiac_AOD_Uncertainty_var: 133053.65403986978
+          maiac_Column_WV_mean: 2185.140546476592
+          maiac_Column_WV_var: 547229.270922628
+          maiac_AOD_QA_mean: 1732.9757617314656
+          maiac_AOD_QA_var: 2612024.4745325297
+          maiac_AOD_MODEL_mean: 7.978907026035685
+          maiac_AOD_MODEL_var: 0.013574153634476418
+          maiac_Injection_Height_mean: 427.1186147292455
+          maiac_Injection_Height_var: 10361.270402952037
+          misr_Aerosol_Optical_Depth_mean: 0.4806187183429033
+          misr_Aerosol_Optical_Depth_var: 0.00232771458747014
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.06079062984730947
+          misr_Angstrom_Exponent_550_860nm_mean: 0.9660642477182242
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.0015990119903547774
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.047150233660179806
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.2424786088558344
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.08972419422979534
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.14841920141226203
+          gfs_Wind speed (gust)_mean: 4.298194670334201
+          gfs_Wind speed (gust)_var: 0.6195111268939394
+          gfs_Haines Index_mean: 5.155776515151516
+          gfs_Haines Index_var: 0.07114109848484847
+          gfs_Surface pressure_mean: 98377.6383581913
+          gfs_Surface pressure_var: 9765.38121212124
+          gfs_Orography_mean: 214.6366252737334
+          gfs_Orography_var: 74.62567272727277
+          gfs_Temperature_mean: 299.13536936442057
+          gfs_Temperature_var: 5.100891335227279
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 0.0
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 0.0
+          gfs_Snow depth_mean: 0.0
+          gfs_Snow depth_var: 0.0
+          gfs_Percent frozen precipitation_mean: -46.89370875503077
+          gfs_Percent frozen precipitation_var: 40.38732362689395
+          gfs_Wilting Point_mean: 0.26026363532037444
+          gfs_Wilting Point_var: 0.013590937698863634
+          gfs_Field Capacity_mean: 0.3704205882448139
+          gfs_Field Capacity_var: 0.0017108376384943075
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 3.35086314461448
+          gfs_Surface lifted index_var: 0.2775899621212121
+          gfs_Convective available potential energy_mean: 210.1410984848485
+          gfs_Convective available potential energy_var: 5387.956439393939
+          gfs_Convective inhibition_mean: -37.31873478744969
+          gfs_Convective inhibition_var: 614.2216915246213
+          gfs_Best (4-layer) lifted index_mean: 1.8962413426601525
+          gfs_Best (4-layer) lifted index_var: 0.11963068181818179
+          gfs_Planetary boundary layer height_mean: 267.3237003626968
+          gfs_Planetary boundary layer height_var: 16539.737229545455
+          gfs_Land-sea mask_mean: 1.0
+          gfs_Land-sea mask_var: 0.0
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 1.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.0
+          row_nan_count: 10.642045454545455
+  YHOPV:
+          maiac_Optical_Depth_047_mean: 941.6569356791179
+          maiac_Optical_Depth_047_var: 24283.185926181694
+          maiac_Optical_Depth_055_mean: 757.2866424357096
+          maiac_Optical_Depth_055_var: 16411.8515091366
+          maiac_AOD_Uncertainty_mean: 786.7213827768961
+          maiac_AOD_Uncertainty_var: 428557.01363978215
+          maiac_Column_WV_mean: 2180.570319268582
+          maiac_Column_WV_var: 551533.2096889345
+          maiac_AOD_QA_mean: 1952.2009684745176
+          maiac_AOD_QA_var: 3140856.0598775544
+          maiac_AOD_MODEL_mean: 7.992749117533366
+          maiac_AOD_MODEL_var: 0.00902773440074291
+          maiac_Injection_Height_mean: 434.40259829434484
+          maiac_Injection_Height_var: 8404.389758785343
+          misr_Aerosol_Optical_Depth_mean: 0.5245186202720399
+          misr_Aerosol_Optical_Depth_var: 0.002891152050119002
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.06164129516561121
+          misr_Angstrom_Exponent_550_860nm_mean: 0.9100325136457771
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.002240165444075532
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.05809016907300452
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.2594771937257918
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.10761638113917031
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.15742845383640947
+          gfs_Wind speed (gust)_mean: 4.1236513406701745
+          gfs_Wind speed (gust)_var: 0.5858159722222223
+          gfs_Haines Index_mean: 5.09375
+          gfs_Haines Index_var: 0.06838348765432098
+          gfs_Surface pressure_mean: 98357.93656442901
+          gfs_Surface pressure_var: 10133.469382716072
+          gfs_Orography_mean: 213.73321952160498
+          gfs_Orography_var: 77.88973827160498
+          gfs_Temperature_mean: 299.5743508609725
+          gfs_Temperature_var: 4.991806520061734
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 0.0
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 0.0
+          gfs_Snow depth_mean: 0.0
+          gfs_Snow depth_var: 0.0
+          gfs_Percent frozen precipitation_mean: -46.74715116524402
+          gfs_Percent frozen precipitation_var: 39.30697145061729
+          gfs_Wilting Point_mean: 0.257848764586743
+          gfs_Wilting Point_var: 0.014021559714506174
+          gfs_Field Capacity_mean: 0.3695642293482651
+          gfs_Field Capacity_var: 0.0017652179234181862
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 2.908945780624578
+          gfs_Surface lifted index_var: 0.25770254629629624
+          gfs_Convective available potential energy_mean: 214.1844135802469
+          gfs_Convective available potential energy_var: 5567.0904706790125
+          gfs_Convective inhibition_mean: -40.38662712191358
+          gfs_Convective inhibition_var: 611.1477440200617
+          gfs_Best (4-layer) lifted index_mean: 1.6329278663352682
+          gfs_Best (4-layer) lifted index_var: 0.11487750771604936
+          gfs_Planetary boundary layer height_mean: 259.9347383249542
+          gfs_Planetary boundary layer height_var: 16219.371012962964
+          gfs_Land-sea mask_mean: 1.0
+          gfs_Land-sea mask_var: 0.0
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 1.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.0
+          row_nan_count: 10.48611111111111
+  8KNI6:
+          maiac_Optical_Depth_047_mean: 935.3642837481792
+          maiac_Optical_Depth_047_var: 23247.775646443948
+          maiac_Optical_Depth_055_mean: 752.6290924668978
+          maiac_Optical_Depth_055_var: 15804.119536980284
+          maiac_AOD_Uncertainty_mean: 477.97088494099364
+          maiac_AOD_Uncertainty_var: 112790.79831898406
+          maiac_Column_WV_mean: 2190.4043637697227
+          maiac_Column_WV_var: 570909.2040400786
+          maiac_AOD_QA_mean: 1961.5453831966681
+          maiac_AOD_QA_var: 3293501.624971764
+          maiac_AOD_MODEL_mean: 7.980893629223274
+          maiac_AOD_MODEL_var: 0.01185551706769618
+          maiac_Injection_Height_mean: 437.2625890354534
+          maiac_Injection_Height_var: 8816.908136268165
+          misr_Aerosol_Optical_Depth_mean: 0.47957494897676295
+          misr_Aerosol_Optical_Depth_var: 0.004831398794043663
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.05859550432928025
+          misr_Angstrom_Exponent_550_860nm_mean: 1.0006790357779285
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.002103341244485711
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.049791127197123794
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.24540658356224904
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.09273432654359175
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.1414371115750953
+          gfs_Wind speed (gust)_mean: 3.9874643422000005
+          gfs_Wind speed (gust)_var: 0.9511263258563728
+          gfs_Haines Index_mean: 5.101721439749609
+          gfs_Haines Index_var: 0.09163623717614328
+          gfs_Surface pressure_mean: 98426.00239632238
+          gfs_Surface pressure_var: 13070.194512258735
+          gfs_Orography_mean: 209.46029911238267
+          gfs_Orography_var: 102.61985685967655
+          gfs_Temperature_mean: 298.47709098103525
+          gfs_Temperature_var: 4.96742175273866
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 0.0
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 0.0
+          gfs_Snow depth_mean: 0.0
+          gfs_Snow depth_var: 0.0
+          gfs_Percent frozen precipitation_mean: -47.121758842169776
+          gfs_Percent frozen precipitation_var: 43.7657902973396
+          gfs_Wilting Point_mean: 0.19410338983351702
+          gfs_Wilting Point_var: 0.017549846186750092
+          gfs_Field Capacity_mean: 0.34695069717622135
+          gfs_Field Capacity_var: 0.00220898828116843
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 3.338350966428181
+          gfs_Surface lifted index_var: 0.4543279429664407
+          gfs_Convective available potential energy_mean: 216.31455399061034
+          gfs_Convective available potential energy_var: 7366.479916536255
+          gfs_Convective inhibition_mean: -41.2917105852345
+          gfs_Convective inhibition_var: 751.1274069727003
+          gfs_Best (4-layer) lifted index_mean: 1.9162628114130205
+          gfs_Best (4-layer) lifted index_var: 0.19708746304990432
+          gfs_Planetary boundary layer height_mean: 213.02148068487242
+          gfs_Planetary boundary layer height_var: 17962.459398921925
+          gfs_Land-sea mask_mean: 1.0
+          gfs_Land-sea mask_var: 0.0
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 1.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.0
+          row_nan_count: 10.336463223787167
+  VYH7U:
+          maiac_Optical_Depth_047_mean: 912.7710812886556
+          maiac_Optical_Depth_047_var: 28533.291381261213
+          maiac_Optical_Depth_055_mean: 733.3129420961652
+          maiac_Optical_Depth_055_var: 19349.08124455836
+          maiac_AOD_Uncertainty_mean: 528.8191353070854
+          maiac_AOD_Uncertainty_var: 105665.29227706729
+          maiac_Column_WV_mean: 2240.6898981603617
+          maiac_Column_WV_var: 592962.8744686049
+          maiac_AOD_QA_mean: 1941.82181720293
+          maiac_AOD_QA_var: 2742473.3961262885
+          maiac_AOD_MODEL_mean: 7.995703932784853
+          maiac_AOD_MODEL_var: 0.00487532565390887
+          maiac_Injection_Height_mean: 296.37222448984784
+          maiac_Injection_Height_var: 12495.970579064815
+          misr_Aerosol_Optical_Depth_mean: 0.45515038855168044
+          misr_Aerosol_Optical_Depth_var: 0.0021799179598704995
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.06261028668416135
+          misr_Angstrom_Exponent_550_860nm_mean: 0.9692995148139764
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.0022675920402581403
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.03436839101496485
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.2304427510137716
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.07579557471445535
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.1489153802291958
+          gfs_Wind speed (gust)_mean: 4.006289915457348
+          gfs_Wind speed (gust)_var: 0.884697928126146
+          gfs_Haines Index_mean: 5.091859185918592
+          gfs_Haines Index_var: 0.10304363769710304
+          gfs_Surface pressure_mean: 98351.1708934956
+          gfs_Surface pressure_var: 4399.005500550044
+          gfs_Orography_mean: 220.5444365588903
+          gfs_Orography_var: 33.304381958195805
+          gfs_Temperature_mean: 298.1846265803338
+          gfs_Temperature_var: 6.4389104327099425
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 0.0
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 0.0
+          gfs_Snow depth_mean: 0.0
+          gfs_Snow depth_var: 0.0
+          gfs_Percent frozen precipitation_mean: -46.71730533343862
+          gfs_Percent frozen precipitation_var: 61.01436331133115
+          gfs_Wilting Point_mean: 0.21495923998993222
+          gfs_Wilting Point_var: 0.018480507571507133
+          gfs_Field Capacity_mean: 0.35436047107457314
+          gfs_Field Capacity_var: 0.0023257658264575812
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 3.4899792636581775
+          gfs_Surface lifted index_var: 0.4094902823615695
+          gfs_Convective available potential energy_mean: 216.04895489548954
+          gfs_Convective available potential energy_var: 8136.805555555556
+          gfs_Convective inhibition_mean: -36.378545330118946
+          gfs_Convective inhibition_var: 832.2251760176018
+          gfs_Best (4-layer) lifted index_mean: 2.0662368598157426
+          gfs_Best (4-layer) lifted index_var: 0.21595847084708472
+          gfs_Planetary boundary layer height_mean: 243.06606842880333
+          gfs_Planetary boundary layer height_var: 22153.462166483314
+          gfs_Land-sea mask_mean: 1.0
+          gfs_Land-sea mask_var: 0.0
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 1.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.0
+          row_nan_count: 11.107260726072607
+  C7PGV:
+          maiac_Optical_Depth_047_mean: 903.8735745465314
+          maiac_Optical_Depth_047_var: 28634.68785871584
+          maiac_Optical_Depth_055_mean: 726.1556350708008
+          maiac_Optical_Depth_055_var: 19383.792289303532
+          maiac_AOD_Uncertainty_mean: 390.51447699346335
+          maiac_AOD_Uncertainty_var: 62379.053601731765
+          maiac_Column_WV_mean: 2140.1686494782216
+          maiac_Column_WV_var: 606165.9652203756
+          maiac_AOD_QA_mean: 2000.600995256765
+          maiac_AOD_QA_var: 2976864.72321563
+          maiac_AOD_MODEL_mean: 7.991254248442473
+          maiac_AOD_MODEL_var: 0.004855445374085392
+          maiac_Injection_Height_mean: 535.1299288575078
+          maiac_Injection_Height_var: 8837.756710873875
+          misr_Aerosol_Optical_Depth_mean: 0.47261069124114924
+          misr_Aerosol_Optical_Depth_var: 0.0037762429653520504
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.05657255903271761
+          misr_Angstrom_Exponent_550_860nm_mean: 1.0131132736288269
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.0015646342604436324
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.038392663459646786
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.24236809565075512
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.09292291099708737
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.1373227401368919
+          gfs_Wind speed (gust)_mean: 4.257324743293472
+          gfs_Wind speed (gust)_var: 0.5499643909626719
+          gfs_Haines Index_mean: 5.180746561886051
+          gfs_Haines Index_var: 0.08153241650294696
+          gfs_Surface pressure_mean: 98354.5266392436
+          gfs_Surface pressure_var: 5838.451237721012
+          gfs_Orography_mean: 221.22468481397354
+          gfs_Orography_var: 44.18595834970523
+          gfs_Temperature_mean: 299.31622364816127
+          gfs_Temperature_var: 2.8832625245579586
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 0.0
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 0.0
+          gfs_Snow depth_mean: 0.0
+          gfs_Snow depth_var: 0.0
+          gfs_Percent frozen precipitation_mean: -46.674613176207174
+          gfs_Percent frozen precipitation_var: 43.05648452848724
+          gfs_Wilting Point_mean: 0.29099464524124835
+          gfs_Wilting Point_var: 0.010894589546905697
+          gfs_Field Capacity_mean: 0.38133992224432867
+          gfs_Field Capacity_var: 0.001370050006139489
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 3.7215142435549753
+          gfs_Surface lifted index_var: 0.24772716110019644
+          gfs_Convective available potential energy_mean: 214.87328094302555
+          gfs_Convective available potential energy_var: 4896.533398821218
+          gfs_Convective inhibition_mean: -29.840139860441734
+          gfs_Convective inhibition_var: 480.5074656188606
+          gfs_Best (4-layer) lifted index_mean: 2.3688925947327983
+          gfs_Best (4-layer) lifted index_var: 0.13775417485265223
+          gfs_Planetary boundary layer height_mean: 327.4820110088716
+          gfs_Planetary boundary layer height_var: 9216.903442829078
+          gfs_Land-sea mask_mean: 1.0
+          gfs_Land-sea mask_var: 0.0
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 1.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.0
+          row_nan_count: 10.905697445972494
+  VXNN3:
+          maiac_Optical_Depth_047_mean: 964.5551870449169
+          maiac_Optical_Depth_047_var: 27844.738656856964
+          maiac_Optical_Depth_055_mean: 775.9668253048046
+          maiac_Optical_Depth_055_var: 18927.63933734295
+          maiac_AOD_Uncertainty_mean: 565.6829474085422
+          maiac_AOD_Uncertainty_var: 177879.6758141148
+          maiac_Column_WV_mean: 2277.2772262718563
+          maiac_Column_WV_var: 602628.5507931802
+          maiac_AOD_QA_mean: 2030.3403649013453
+          maiac_AOD_QA_var: 2775979.105864513
+          maiac_AOD_MODEL_mean: 8.0
+          maiac_AOD_MODEL_var: 0.0
+          maiac_Injection_Height_mean: 286.6336484811245
+          maiac_Injection_Height_var: 7970.291392216802
+          misr_Aerosol_Optical_Depth_mean: 0.5034058493872483
+          misr_Aerosol_Optical_Depth_var: 0.004097885070336576
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.06720094477964768
+          misr_Angstrom_Exponent_550_860nm_mean: 0.9420254111289978
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.0028091439826712934
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.04852192762773481
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.24286023237639004
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.10172481331456863
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.15882433533875476
+          gfs_Wind speed (gust)_mean: 4.094766626376711
+          gfs_Wind speed (gust)_var: 0.7908882827324477
+          gfs_Haines Index_mean: 5.146584440227704
+          gfs_Haines Index_var: 0.08194971537001898
+          gfs_Surface pressure_mean: 98358.28565583492
+          gfs_Surface pressure_var: 1529.8556356736194
+          gfs_Orography_mean: 218.26251208194967
+          gfs_Orography_var: 13.276384060721044
+          gfs_Temperature_mean: 296.81841756107684
+          gfs_Temperature_var: 4.004028700189757
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 0.0
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 0.0
+          gfs_Snow depth_mean: 0.0
+          gfs_Snow depth_var: 0.0
+          gfs_Percent frozen precipitation_mean: -47.03620154943593
+          gfs_Percent frozen precipitation_var: 60.585461337760925
+          gfs_Wilting Point_mean: 0.1464787939719502
+          gfs_Wilting Point_var: 0.01287306956000939
+          gfs_Field Capacity_mean: 0.33007053204125647
+          gfs_Field Capacity_var: 0.0016201891425521074
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 3.9580222547846007
+          gfs_Surface lifted index_var: 0.2939943074003795
+          gfs_Convective available potential energy_mean: 201.61337760910817
+          gfs_Convective available potential energy_var: 5729.239682163188
+          gfs_Convective inhibition_mean: -36.39147224209114
+          gfs_Convective inhibition_var: 702.2884369070209
+          gfs_Best (4-layer) lifted index_mean: 2.1933554285617665
+          gfs_Best (4-layer) lifted index_var: 0.1593358633776091
+          gfs_Planetary boundary layer height_mean: 212.67820968714793
+          gfs_Planetary boundary layer height_var: 21104.74712789374
+          gfs_Land-sea mask_mean: 1.0
+          gfs_Land-sea mask_var: 0.0
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 1.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.0
+          row_nan_count: 10.776091081593927
+  ZF3ZW:
+          maiac_Optical_Depth_047_mean: 908.1253439991186
+          maiac_Optical_Depth_047_var: 28138.71534441134
+          maiac_Optical_Depth_055_mean: 729.7413600082939
+          maiac_Optical_Depth_055_var: 19053.283931132042
+          maiac_AOD_Uncertainty_mean: 896.3641652001274
+          maiac_AOD_Uncertainty_var: 540935.434605306
+          maiac_Column_WV_mean: 2072.417796686677
+          maiac_Column_WV_var: 504546.25084102614
+          maiac_AOD_QA_mean: 1955.5508578921122
+          maiac_AOD_QA_var: 2973122.7337171608
+          maiac_AOD_MODEL_mean: 7.9930619804571705
+          maiac_AOD_MODEL_var: 0.007085495595494927
+          maiac_Injection_Height_mean: 369.8527002334595
+          maiac_Injection_Height_var: 11935.182511160354
+          misr_Aerosol_Optical_Depth_mean: 0.45890073977656415
+          misr_Aerosol_Optical_Depth_var: 0.0024510606519114117
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.06011715622434573
+          misr_Angstrom_Exponent_550_860nm_mean: 0.9415748356790333
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.0032468935807988793
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.05202419728112333
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.2290081829241999
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.07654960391464752
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.1533461998083761
+          gfs_Wind speed (gust)_mean: 4.291100461782781
+          gfs_Wind speed (gust)_var: 0.5693067956349206
+          gfs_Haines Index_mean: 5.184027777777778
+          gfs_Haines Index_var: 0.07899305555555555
+          gfs_Surface pressure_mean: 98356.41015625
+          gfs_Surface pressure_var: 5839.167619047611
+          gfs_Orography_mean: 221.2219562251985
+          gfs_Orography_var: 44.19408888888882
+          gfs_Temperature_mean: 299.30086163717607
+          gfs_Temperature_var: 2.8888802083333354
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 0.0
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 0.0
+          gfs_Snow depth_mean: 0.0
+          gfs_Snow depth_var: 0.0
+          gfs_Percent frozen precipitation_mean: -46.6310080876426
+          gfs_Percent frozen precipitation_var: 45.495239335317464
+          gfs_Wilting Point_mean: 0.2909908718956841
+          gfs_Wilting Point_var: 0.010894893541666666
+          gfs_Field Capacity_mean: 0.3813385823083303
+          gfs_Field Capacity_var: 0.0013700888268849208
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 3.81374296309456
+          gfs_Surface lifted index_var: 0.25079613095238096
+          gfs_Convective available potential energy_mean: 206.8918650793651
+          gfs_Convective available potential energy_var: 4911.4858630952385
+          gfs_Convective inhibition_mean: -29.761926947699656
+          gfs_Convective inhibition_var: 485.9023189484128
+          gfs_Best (4-layer) lifted index_mean: 2.431914829072498
+          gfs_Best (4-layer) lifted index_var: 0.13855778769841265
+          gfs_Planetary boundary layer height_mean: 327.37042663574215
+          gfs_Planetary boundary layer height_var: 9157.05499047619
+          gfs_Land-sea mask_mean: 1.0
+          gfs_Land-sea mask_var: 0.0
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 1.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.0
+          row_nan_count: 10.583333333333334
+  7334C:
+          maiac_Optical_Depth_047_mean: 863.8966919246473
+          maiac_Optical_Depth_047_var: 17954.17723981071
+          maiac_Optical_Depth_055_mean: 692.942248545195
+          maiac_Optical_Depth_055_var: 12171.720950709156
+          maiac_AOD_Uncertainty_mean: 712.9205814034598
+          maiac_AOD_Uncertainty_var: 440249.754448051
+          maiac_Column_WV_mean: 2070.3169338014795
+          maiac_Column_WV_var: 504574.20070540346
+          maiac_AOD_QA_mean: 1917.27625646682
+          maiac_AOD_QA_var: 2760458.1354444535
+          maiac_AOD_MODEL_mean: 7.990542763157895
+          maiac_AOD_MODEL_var: 0.0032380756732605974
+          maiac_Injection_Height_mean: 288.68552810123987
+          maiac_Injection_Height_var: 12613.067183242669
+          misr_Aerosol_Optical_Depth_mean: 0.47533185476375417
+          misr_Aerosol_Optical_Depth_var: 0.003819551221829033
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.058800010160670976
+          misr_Angstrom_Exponent_550_860nm_mean: 1.0597614956693062
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.0015383247777269655
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.036149242491200884
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.26022623154506863
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.09311474992130037
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.12199356813001404
+          gfs_Wind speed (gust)_mean: 4.248699465591904
+          gfs_Wind speed (gust)_var: 0.5728107142857144
+          gfs_Haines Index_mean: 5.194761904761905
+          gfs_Haines Index_var: 0.07726190476190477
+          gfs_Surface pressure_mean: 98380.49001190477
+          gfs_Surface pressure_var: 5835.062247619046
+          gfs_Orography_mean: 221.26942972470243
+          gfs_Orography_var: 44.05262933333326
+          gfs_Temperature_mean: 298.99965441313253
+          gfs_Temperature_var: 2.9674464285714306
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 0.0
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 0.0
+          gfs_Snow depth_mean: 0.0
+          gfs_Snow depth_var: 0.0
+          gfs_Percent frozen precipitation_mean: -46.942720389229905
+          gfs_Percent frozen precipitation_var: 41.06185833333335
+          gfs_Wilting Point_mean: 0.29105652261207215
+          gfs_Wilting Point_var: 0.010889604475000002
+          gfs_Field Capacity_mean: 0.3813618951822917
+          gfs_Field Capacity_var: 0.0013694134023809524
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 4.30332184273856
+          gfs_Surface lifted index_var: 0.25148571428571426
+          gfs_Convective available potential energy_mean: 188.23761904761903
+          gfs_Convective available potential energy_var: 4332.691547619048
+          gfs_Convective inhibition_mean: -28.75832261439732
+          gfs_Convective inhibition_var: 471.3829369047619
+          gfs_Best (4-layer) lifted index_mean: 2.8318371756417413
+          gfs_Best (4-layer) lifted index_var: 0.14010714285714282
+          gfs_Planetary boundary layer height_mean: 316.41551317894346
+          gfs_Planetary boundary layer height_var: 8726.478754285714
+          gfs_Land-sea mask_mean: 1.0
+          gfs_Land-sea mask_var: 0.0
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 1.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.0
+          row_nan_count: 10.007619047619048
+  CPR0W:
+          maiac_Optical_Depth_047_mean: 951.2905104347158
+          maiac_Optical_Depth_047_var: 27266.551938285436
+          maiac_Optical_Depth_055_mean: 765.205331114766
+          maiac_Optical_Depth_055_var: 18492.86575003002
+          maiac_AOD_Uncertainty_mean: 875.6136519685798
+          maiac_AOD_Uncertainty_var: 561193.5220830137
+          maiac_Column_WV_mean: 2050.599882403351
+          maiac_Column_WV_var: 483226.31139407377
+          maiac_AOD_QA_mean: 2045.1188487726613
+          maiac_AOD_QA_var: 2924956.5290532857
+          maiac_AOD_MODEL_mean: 7.996865203761756
+          maiac_AOD_MODEL_var: 0.003134796238244514
+          maiac_Injection_Height_mean: 342.99286506952865
+          maiac_Injection_Height_var: 7045.994596904391
+          misr_Aerosol_Optical_Depth_mean: 0.4766352638392381
+          misr_Aerosol_Optical_Depth_var: 0.005818308625681318
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.06606991169318344
+          misr_Angstrom_Exponent_550_860nm_mean: 0.9140483468351229
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.002132061294207813
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.046162208507248476
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.23944089988447692
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.08926464584022056
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.14793298236955776
+          gfs_Wind speed (gust)_mean: 4.196323212135771
+          gfs_Wind speed (gust)_var: 0.6120206422018349
+          gfs_Haines Index_mean: 5.124311926605505
+          gfs_Haines Index_var: 0.06915137614678898
+          gfs_Surface pressure_mean: 98429.5569495413
+          gfs_Surface pressure_var: 9573.615559633037
+          gfs_Orography_mean: 215.12712234805048
+          gfs_Orography_var: 72.85347522935783
+          gfs_Temperature_mean: 298.3059243746416
+          gfs_Temperature_var: 5.181884174311933
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 0.0
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 0.0
+          gfs_Snow depth_mean: 0.0
+          gfs_Snow depth_var: 0.0
+          gfs_Percent frozen precipitation_mean: -46.96418041544223
+          gfs_Percent frozen precipitation_var: 40.95707683486239
+          gfs_Wilting Point_mean: 0.2615747694830938
+          gfs_Wilting Point_var: 0.013357135022935781
+          gfs_Field Capacity_mean: 0.37088554118585154
+          gfs_Field Capacity_var: 0.0016813123107798128
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 4.173416763445654
+          gfs_Surface lifted index_var: 0.2940435779816514
+          gfs_Convective available potential energy_mean: 192.63715596330275
+          gfs_Convective available potential energy_var: 4867.744380733945
+          gfs_Convective inhibition_mean: -32.10473567857655
+          gfs_Convective inhibition_var: 527.0401456422019
+          gfs_Best (4-layer) lifted index_mean: 2.615266410057698
+          gfs_Best (4-layer) lifted index_var: 0.1253612385321101
+          gfs_Planetary boundary layer height_mean: 259.4091630702587
+          gfs_Planetary boundary layer height_var: 16249.216864587155
+          gfs_Land-sea mask_mean: 1.0
+          gfs_Land-sea mask_var: 0.0
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 1.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.0
+          row_nan_count: 10.058715596330275
+  IUMEZ:
+          maiac_Optical_Depth_047_mean: 952.5829524028151
+          maiac_Optical_Depth_047_var: 27222.568168835573
+          maiac_Optical_Depth_055_mean: 766.2891082401517
+          maiac_Optical_Depth_055_var: 18478.27985474624
+          maiac_AOD_Uncertainty_mean: 531.6707858435491
+          maiac_AOD_Uncertainty_var: 162352.37709127934
+          maiac_Column_WV_mean: 2091.004120942588
+          maiac_Column_WV_var: 484980.1211070545
+          maiac_AOD_QA_mean: 2076.9344992362367
+          maiac_AOD_QA_var: 2987124.1043236605
+          maiac_AOD_MODEL_mean: 7.999036873443218
+          maiac_AOD_MODEL_var: 0.0016331270900522667
+          maiac_Injection_Height_mean: 402.1263709232725
+          maiac_Injection_Height_var: 11205.719591831194
+          misr_Aerosol_Optical_Depth_mean: 0.5007816351122326
+          misr_Aerosol_Optical_Depth_var: 0.001682186670554053
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.06731754039172767
+          misr_Angstrom_Exponent_550_860nm_mean: 0.9061025151499995
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.0017428553348441244
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.05339811164195889
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.25576525242240333
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.1076570245885738
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.13736228677271686
+          gfs_Wind speed (gust)_mean: 4.165959625846888
+          gfs_Wind speed (gust)_var: 0.7663025036209394
+          gfs_Haines Index_mean: 5.164804469273743
+          gfs_Haines Index_var: 0.09295468653010552
+          gfs_Surface pressure_mean: 98404.02076738051
+          gfs_Surface pressure_var: 9418.134591351138
+          gfs_Orography_mean: 217.3028134092761
+          gfs_Orography_var: 70.43566281812542
+          gfs_Temperature_mean: 298.34125499950295
+          gfs_Temperature_var: 4.679817401200087
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 0.0
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 0.0
+          gfs_Snow depth_mean: 0.0
+          gfs_Snow depth_var: 0.0
+          gfs_Percent frozen precipitation_mean: -46.978994309598804
+          gfs_Percent frozen precipitation_var: 49.381616490792474
+          gfs_Wilting Point_mean: 0.24766843458633853
+          gfs_Wilting Point_var: 0.012976429594972038
+          gfs_Field Capacity_mean: 0.36595809121584755
+          gfs_Field Capacity_var: 0.0016324483705772578
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 4.15570760214277
+          gfs_Surface lifted index_var: 0.3859931719428926
+          gfs_Convective available potential energy_mean: 197.25294847920546
+          gfs_Convective available potential energy_var: 7232.862559486861
+          gfs_Convective inhibition_mean: -31.467277351630397
+          gfs_Convective inhibition_var: 632.2802157045313
+          gfs_Best (4-layer) lifted index_mean: 2.6068549716790814
+          gfs_Best (4-layer) lifted index_var: 0.1974120629008897
+          gfs_Planetary boundary layer height_mean: 271.15666270373845
+          gfs_Planetary boundary layer height_var: 15136.11221353197
+          gfs_Land-sea mask_mean: 1.0
+          gfs_Land-sea mask_var: 0.0
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 1.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.0
+          row_nan_count: 11.292364990689013
+  PW0JT:
+          maiac_Optical_Depth_047_mean: 899.5910154756133
+          maiac_Optical_Depth_047_var: 20385.175254696733
+          maiac_Optical_Depth_055_mean: 723.2067244869846
+          maiac_Optical_Depth_055_var: 13747.24822165276
+          maiac_AOD_Uncertainty_mean: 715.160159448477
+          maiac_AOD_Uncertainty_var: 244741.4499168526
+          maiac_Column_WV_mean: 2241.2771108697143
+          maiac_Column_WV_var: 550862.4362302376
+          maiac_AOD_QA_mean: 1809.5582639033978
+          maiac_AOD_QA_var: 2639710.116333833
+          maiac_AOD_MODEL_mean: 7.987534204563061
+          maiac_AOD_MODEL_var: 0.007336708271822562
+          maiac_Injection_Height_mean: 518.1436672992394
+          maiac_Injection_Height_var: 26681.525138923786
+          misr_Aerosol_Optical_Depth_mean: 0.47151312723755834
+          misr_Aerosol_Optical_Depth_var: 0.006685892370341368
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.0644777176342904
+          misr_Angstrom_Exponent_550_860nm_mean: 1.0021355193853378
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.0016436768938448093
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.03952354117762294
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.23985616233199836
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.08682979224249716
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.1448303973302245
+          gfs_Wind speed (gust)_mean: 3.990359500025918
+          gfs_Wind speed (gust)_var: 0.7420769230769232
+          gfs_Haines Index_mean: 5.241346153846154
+          gfs_Haines Index_var: 0.07211538461538461
+          gfs_Surface pressure_mean: 98332.91300480769
+          gfs_Surface pressure_var: 2931.701538461537
+          gfs_Orography_mean: 219.8642051908054
+          gfs_Orography_var: 22.468335384615393
+          gfs_Temperature_mean: 297.70508324256315
+          gfs_Temperature_var: 3.0459519230769256
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: 0.0
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: 0.0
+          gfs_Snow depth_mean: 0.0
+          gfs_Snow depth_var: 0.0
+          gfs_Percent frozen precipitation_mean: -46.74539071890024
+          gfs_Percent frozen precipitation_var: 47.40737500000001
+          gfs_Wilting Point_mean: 0.1429155758168147
+          gfs_Wilting Point_var: 0.011520686942307692
+          gfs_Field Capacity_mean: 0.3288005680729793
+          gfs_Field Capacity_var: 0.0014492208461537722
+          gfs_Sunshine Duration_mean: 0.0
+          gfs_Sunshine Duration_var: 0.0
+          gfs_Surface lifted index_mean: 3.8729953090961167
+          gfs_Surface lifted index_var: 0.2980576923076923
+          gfs_Convective available potential energy_mean: 225.40432692307692
+          gfs_Convective available potential energy_var: 5936.434975961539
+          gfs_Convective inhibition_mean: -32.9865243765024
+          gfs_Convective inhibition_var: 480.93633653846155
+          gfs_Best (4-layer) lifted index_mean: 2.224230867532583
+          gfs_Best (4-layer) lifted index_var: 0.13236538461538458
+          gfs_Planetary boundary layer height_mean: 225.03554322462816
+          gfs_Planetary boundary layer height_var: 16193.156156923078
+          gfs_Land-sea mask_mean: 1.0
+          gfs_Land-sea mask_var: 0.0
+          gfs_Sea ice area fraction_mean: 0.0
+          gfs_Sea ice area fraction_var: 0.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: 1.0
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: 0.0
+          row_nan_count: 10.523076923076923
+  DHO4M:
+          maiac_Optical_Depth_047_mean: 193.64544144323315
+          maiac_Optical_Depth_047_var: 2459.887752601713
+          maiac_Optical_Depth_055_mean: 143.17973623114116
+          maiac_Optical_Depth_055_var: 1347.3419806517736
+          maiac_AOD_Uncertainty_mean: 505.8303034464518
+          maiac_AOD_Uncertainty_var: 93610.5601552917
+          maiac_Column_WV_mean: 1286.1600534651016
+          maiac_Column_WV_var: 49971.856528916316
+          maiac_AOD_QA_mean: 810.6592815981971
+          maiac_AOD_QA_var: 605870.7254704501
+          maiac_AOD_MODEL_mean: 2.0
+          maiac_AOD_MODEL_var: 0.0
+          maiac_Injection_Height_mean: 429.15797424316406
+          maiac_Injection_Height_var: 9409.301331078896
+          misr_Aerosol_Optical_Depth_mean: 0.13996168183670799
+          misr_Aerosol_Optical_Depth_var: 0.0010192668130820925
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.04323679817290125
+          misr_Angstrom_Exponent_550_860nm_mean: 0.8391708481040868
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.00152635973945701
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.02032285087096333
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.07057924649085506
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.016516688588043543
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.05286686714018943
+          gfs_Wind speed (gust)_mean: nan
+          gfs_Wind speed (gust)_var: nan
+          gfs_Haines Index_mean: nan
+          gfs_Haines Index_var: nan
+          gfs_Surface pressure_mean: nan
+          gfs_Surface pressure_var: nan
+          gfs_Orography_mean: nan
+          gfs_Orography_var: nan
+          gfs_Temperature_mean: nan
+          gfs_Temperature_var: nan
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: nan
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: nan
+          gfs_Snow depth_mean: nan
+          gfs_Snow depth_var: nan
+          gfs_Percent frozen precipitation_mean: nan
+          gfs_Percent frozen precipitation_var: nan
+          gfs_Wilting Point_mean: nan
+          gfs_Wilting Point_var: nan
+          gfs_Field Capacity_mean: nan
+          gfs_Field Capacity_var: nan
+          gfs_Sunshine Duration_mean: nan
+          gfs_Sunshine Duration_var: nan
+          gfs_Surface lifted index_mean: nan
+          gfs_Surface lifted index_var: nan
+          gfs_Convective available potential energy_mean: nan
+          gfs_Convective available potential energy_var: nan
+          gfs_Convective inhibition_mean: nan
+          gfs_Convective inhibition_var: nan
+          gfs_Best (4-layer) lifted index_mean: nan
+          gfs_Best (4-layer) lifted index_var: nan
+          gfs_Planetary boundary layer height_mean: nan
+          gfs_Planetary boundary layer height_var: nan
+          gfs_Land-sea mask_mean: nan
+          gfs_Land-sea mask_var: nan
+          gfs_Sea ice area fraction_mean: nan
+          gfs_Sea ice area fraction_var: nan
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: nan
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: nan
+          row_nan_count: 47.87222222222222
+  VBLD0:
+          maiac_Optical_Depth_047_mean: 233.9952720569659
+          maiac_Optical_Depth_047_var: 2481.3312357276204
+          maiac_Optical_Depth_055_mean: 173.04463273060472
+          maiac_Optical_Depth_055_var: 1359.192607805081
+          maiac_AOD_Uncertainty_mean: 498.5451588100857
+          maiac_AOD_Uncertainty_var: 102627.58245311586
+          maiac_Column_WV_mean: 1489.8808513641357
+          maiac_Column_WV_var: 48570.95780494285
+          maiac_AOD_QA_mean: 917.9008458667331
+          maiac_AOD_QA_var: 879842.4768660747
+          maiac_AOD_MODEL_mean: 2.0
+          maiac_AOD_MODEL_var: 0.0
+          maiac_Injection_Height_mean: 770.5525196075439
+          maiac_Injection_Height_var: 142029.94365635974
+          misr_Aerosol_Optical_Depth_mean: 0.1902514464723376
+          misr_Aerosol_Optical_Depth_var: 0.0015861034406545193
+          misr_Aerosol_Optical_Depth_Uncertainty_mean: 0.05146838430888374
+          misr_Angstrom_Exponent_550_860nm_mean: 0.9140235483646393
+          misr_Absorption_Aerosol_Optical_Depth_mean: 0.0013587292511763665
+          misr_Nonspherical_Aerosol_Optical_Depth_mean: 0.01761921789371765
+          misr_Small_Mode_Aerosol_Optical_Depth_mean: 0.1106398310512304
+          misr_Medium_Mode_Aerosol_Optical_Depth_mean: 0.02057492025554749
+          misr_Large_Mode_Aerosol_Optical_Depth_mean: 0.059038016470507326
+          gfs_Wind speed (gust)_mean: nan
+          gfs_Wind speed (gust)_var: nan
+          gfs_Haines Index_mean: nan
+          gfs_Haines Index_var: nan
+          gfs_Surface pressure_mean: nan
+          gfs_Surface pressure_var: nan
+          gfs_Orography_mean: nan
+          gfs_Orography_var: nan
+          gfs_Temperature_mean: nan
+          gfs_Temperature_var: nan
+          gfs_Water equivalent of accumulated snow depth (deprecated)_mean: nan
+          gfs_Water equivalent of accumulated snow depth (deprecated)_var: nan
+          gfs_Snow depth_mean: nan
+          gfs_Snow depth_var: nan
+          gfs_Percent frozen precipitation_mean: nan
+          gfs_Percent frozen precipitation_var: nan
+          gfs_Wilting Point_mean: nan
+          gfs_Wilting Point_var: nan
+          gfs_Field Capacity_mean: nan
+          gfs_Field Capacity_var: nan
+          gfs_Sunshine Duration_mean: nan
+          gfs_Sunshine Duration_var: nan
+          gfs_Surface lifted index_mean: nan
+          gfs_Surface lifted index_var: nan
+          gfs_Convective available potential energy_mean: nan
+          gfs_Convective available potential energy_var: nan
+          gfs_Convective inhibition_mean: nan
+          gfs_Convective inhibition_var: nan
+          gfs_Best (4-layer) lifted index_mean: nan
+          gfs_Best (4-layer) lifted index_var: nan
+          gfs_Planetary boundary layer height_mean: nan
+          gfs_Planetary boundary layer height_var: nan
+          gfs_Land-sea mask_mean: nan
+          gfs_Land-sea mask_var: nan
+          gfs_Sea ice area fraction_mean: nan
+          gfs_Sea ice area fraction_var: nan
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_mean: nan
+          gfs_Land-sea coverage (nearest neighbor) [land=1,sea=0]_var: nan
+          row_nan_count: 47.077777777777776
+
+GRID_MEAN_VALUES:
+  3S31A: 10.907813228249763
+  A2FBI: 12.65853349187212
+  DJN0F: 12.369010935532723
+  E5P9N: 14.626306836979865
+  FRITQ: 12.713264467611669
+  H96P6: 13.535449244454224
+  PG3MI: 14.384474841358438
+  QJHW4: 9.242349748553176
+  WT52R: 10.517809455056488
+  X5DKW: 14.94262513815776
+  ZP1FZ: 13.405886637735692
+  ZZ8JF: 6.790103305192882
+  1X116: 13.202672208272851
+  90BZ1: 13.582592111156847
+  9Q6TA: 14.093774088599865
+  KW43U: 14.316362486948234
+  VR4WG: 15.911454568637547
+  XJF9O: 13.256226058785858
+  XNLVD: 12.942443121549141
+  1Z2W7: 101.19502911125349
+  90S79: 99.58745562235731
+  A7UCQ: 86.66881638271339
+  D7S1G: 106.31441778770333
+  E2AUK: 88.59537136898571
+  GAC6R: 140.2987142827945
+  GJLB2: 82.59999034466875
+  HANW9: 97.09622600739446
+  HM74A: 112.6170570024323
+  KZ9W9: 87.78135653994735
+  P8JA5: 104.88369078411883
+  PJNW1: 106.97409325818005
+  7F1D1: 79.17097886560079
+  GVQXS: 106.74380857140447
+  WZNCR: 123.12059677537562
+  6EIL6: 102.68411756740862
+  78V83: 83.62910221369856
+  AZJ0Z: 101.2734958339844
+  D72OT: 121.96272660428885
+  NE7BV: 107.22721064079
+  S77YN: 118.45679777548108
+  SZLMT: 112.70992880108186
+  UC74Z: 95.00076869167327
+  YHOPV: 91.57576075070385
+  8KNI6: 86.60614964821211
+  VYH7U: 117.7389146600571
+  C7PGV: 83.35983391878034
+  VXNN3: 98.52894994374618
+  ZF3ZW: 117.98800891035752
+  7334C: 87.50028336506756
+  CPR0W: 89.78208476327121
+  IUMEZ: 108.43681306660142
+  PW0JT: 67.68056745137406
+  DHO4M: 16.175401009801014
+  VBLD0: 18.959865401145926
+
+LOCATION_ENCODING:
+  'Taipei': 0
+  'Delhi': 1
+  'Los Angeles (SoCAB)': 2
+
+PIPE1_DIR: 'models/pipe_1'
+PIPE2_DIR: 'models/pipe_2'
