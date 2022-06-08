@@ -88,10 +88,7 @@ def get_gfs_data(config, grid_metadata) -> pd.DataFrame:
         if not os.path.exists(file_base):
             req = requests.get(filename, cookies = ret.cookies, allow_redirects=True, stream=True)
             filesize = int(req.headers['Content-length'])
-            # with open(file_base, 'wb') as outfile:
-            #     chunk_size=1048576
-            #     for chunk in req.iter_content(chunk_size=chunk_size):
-            #         outfile.write(chunk)
+
             with open(file_base, 'wb') as outfile:
                 chunk_size=1048576
                 for chunk in req.iter_content(chunk_size=chunk_size):

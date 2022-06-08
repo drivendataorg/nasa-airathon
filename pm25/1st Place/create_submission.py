@@ -58,7 +58,6 @@ if __name__ == '__main__':
             reg = pickle.load(open(model_file, "rb"))
             features[name] += (reg.predict(df) / 5)
     features = pd.DataFrame(features).to_numpy()
-    # print(features)
 
     pipeline_1_preds = 0
     for fold in range(1, 6):
@@ -84,7 +83,6 @@ if __name__ == '__main__':
                 reg = pickle.load(open(model_file, "rb"))
                 features[name][indices] += (reg.predict(cur_df) / 5)
     features = pd.DataFrame(features).to_numpy()
-    # print(features)
 
     pipeline_2_preds = 0
     for fold in range(1, 6):

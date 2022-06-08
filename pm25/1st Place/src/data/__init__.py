@@ -142,7 +142,6 @@ def _load_metadata(
         loc_train_dts = loc_train_dts.dt.tz_convert(tzs[i])
         train_df.loc[indices, 'month'] = loc_train_dts.apply(lambda x: x.month)
         train_df.loc[indices, 'day'] = loc_train_dts.apply(lambda x: x.day)
-        # train_df.loc[indices, 'hour'] = loc_train_dts.apply(lambda x: x.hour)
 
         indices = test_df[test_df['grid_id'] == grid_ids[i]].index
         test_df.loc[indices, 'elevation_mean'] = elevation_means[i]
@@ -152,7 +151,6 @@ def _load_metadata(
         loc_test_dts = loc_test_dts.dt.tz_convert(tzs[i])
         test_df.loc[indices, 'month'] = loc_test_dts.apply(lambda x: x.month)
         test_df.loc[indices, 'day'] = loc_test_dts.apply(lambda x: x.day)
-        # test_df.loc[indices, 'hour'] = loc_test_dts.apply(lambda x: x.hour)
 
     train_df['location'] = train_metadata['grid_id'].apply(
         lambda x: grid_df[grid_df['grid_id'] == x]['location'].values[0])
@@ -268,7 +266,6 @@ def prepare_dataset(
 
     grid_data = pd.read_csv(grid_metafile)
 
-    # train_df, test_df = _temporal_impute(train_df, test_df, train_metadata, test_metadata)
     train_df, test_df = _impute(train_df, test_df, train_metadata, test_metadata)
     train_df, test_df = _load_temporal_features(train_df, test_df, grid_data, train_metadata, test_metadata)
 

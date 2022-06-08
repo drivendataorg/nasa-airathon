@@ -50,13 +50,9 @@ def mask(config, data, geometry):
     new_ass = {}
     for k in config.MISR_BANDS:
         new_ass[k] = assets[k][indices]
-    # new_ass['geometry'] = [Point(lg, lt) for lg, lt in zip(new_ass['Longitude'], new_ass['Latitude'])]
                                                                    
     df = pd.DataFrame(new_ass)
-    # poly = Polygon(geometry)
-    # df['mask'] = df['geometry'].apply(lambda x: poly.contains(x))
-    # df = df[df['mask'] == True]
-    # df.drop(columns=['mask', 'geometry'], inplace=True)
+
     return df
 
 def get_misr_data(config, sat_data, grid_metadata) -> pd.DataFrame:

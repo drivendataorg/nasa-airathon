@@ -54,7 +54,6 @@ def rmse(preds, targets):
     return np.sqrt(mse(preds, targets))
 
 def rsquared(preds, targets):
-    # target_mean = 58.86
     target_mean = targets.mean()
     ss_tot = np.sum((targets - target_mean) ** 2)
     ss_res = np.sum((targets - preds) ** 2)
