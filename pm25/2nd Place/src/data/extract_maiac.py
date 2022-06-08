@@ -131,7 +131,6 @@ def extract_data(s3_path,location):
             invalid = np.logical_or(invalid, data == _FillValue)
             data[invalid] = np.nan
             data = (data - add_offset) * scale_factor
-            # data = np.ma.masked_array(data, np.isnan(data))
             all_orbits_data.append(data)
         
         data=np.array(all_orbits_data)

@@ -338,7 +338,6 @@ for location in LOCATIONS:
     dfs.append(df_loc)
 
 df_grids = pd.concat(dfs).reset_index(drop=True)[['grid_id','longitude','latitude']]
-# df_grids.longitude.max(),df_grids.longitude.min()
 df_data = pd.concat(df_data).drop(columns='vwsh_4294967294').reset_index()
 df_data = pd.merge(df_grids,df_data,on=['longitude','latitude']).sort_values(by=['valid_time','grid_id']).reset_index(drop=True)
 df_data.loc[df_data['longitude']>180,'longitude']=df_data.loc[df_data['longitude']>180]['longitude']-360
