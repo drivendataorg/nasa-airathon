@@ -1,6 +1,6 @@
-# conda create --name air_test_sh python=3.7
+# conda create --name air_3rd python=3.7
 # source ~/anaconda3/etc/profile.d/conda.sh
-# conda activate air_test_sh
+# conda activate air_3rd
 
 # Install packages
 conda install geopandas

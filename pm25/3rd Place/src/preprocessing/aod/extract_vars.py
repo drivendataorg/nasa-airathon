@@ -88,14 +88,12 @@ def mask(map1, geo_df, datafield):
                 df.append(geo_df[datafield][k])
                 flag = False
                 break
-            #end if
-        #end for
+
         if(flag):
             l.append(np.nan)
             t.append(np.nan)
             df.append(np.nan)
-        #end if
-    #end for
+
     newdf = pd.DataFrame({'latitude':l, 'longitude': t, datafield:df})
     return newdf
 
@@ -119,7 +117,6 @@ class extract_fields:
         loc_fullname = self.locations_key[loc] 
         file_n = file.split('_')[-1].split('.')[0]
 
-        # save_path = f'extracted_vars/train/{source}/{loc}'
 
         hdf = read_hdf(f'{self.path}/{file}')
 
@@ -132,7 +129,6 @@ class extract_fields:
             # For each shapefile in this location....
             grid_ids = os.listdir(f'{self.path_shapefiles}/{loc_fullname}') # {sys.argv[2]}
             
-            # split_type = sys.argv[3]
 
             for grid_id in grid_ids:
                 

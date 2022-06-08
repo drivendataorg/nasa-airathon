@@ -247,8 +247,6 @@ if __name__ == '__main__':
     rf_joblib = joblib.load(filename_rf)
     gr_joblib = joblib.load(filename_grb)
 
-    #test_filled.to_csv('test_www.csv')
-
     preds_rf = rf_joblib.predict(x)
     preds_gr = gr_joblib.predict(x)
     
