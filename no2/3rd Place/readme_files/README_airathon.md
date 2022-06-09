@@ -258,7 +258,3 @@ Using the trained model parameters in **[model](../model/)** directory it perfor
 * Whenever OMI data is available, use median forecasts from trnOpt = 2. When OMI data is missing, use median forecasts from trnOpt = 1. 
 
 The final forecast is saved as **[submission\_sukantabasu.csv](../forecast/airathon/submission_sukantabasu.csv)**. This particular forecast leads to public and private leaderboard R2 scores of 0.4862 and 0.4419, respectively.    
-
-## License
-
-MIT license. 
