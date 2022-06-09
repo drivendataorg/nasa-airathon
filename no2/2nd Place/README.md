@@ -50,7 +50,4 @@ data_geos =  data_geos[(data_geos.data_generation_datetime<obs.obs_datetime_end)
 ```
 
 
-## License
-[MIT](LICENSE)
-
 
