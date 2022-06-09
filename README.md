@@ -1,7 +1,7 @@
 [<img src='https://s3.amazonaws.com/drivendata-public-assets/logo-white-blue.png' width='600'>](https://www.drivendata.org/)
 <br><br>
 
-![Banner Image](https://drivendata-public-assets.s3.amazonaws.com/noaa-cover-img.png)
+![Banner Image](https://drivendata-public-assets.s3.amazonaws.com/nasa-aq-banner-web.jpg)
 
 
 # NASA Airathon: Predict Air Quality
