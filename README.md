@@ -18,4 +18,12 @@ This repository contains code from winning competitors in the two tracks for the
 - [Trace Gas Track (NO2)](https://github.com/drivendataorg/nasa-airathon/tree/main/no2)
 - [Particulate Track (PM2.5)](https://github.com/drivendataorg/nasa-airathon/tree/main/pm25)
 
+Code for all winning solutions are open source under the MIT License.
+
 **Winning code for other DrivenData competitions is available in the [competition-winners repository](https://github.com/drivendataorg/competition-winners).**
+
+## Winning Solutions
+
+See the README files in the [no2/](no2/) and [pm25](pm25/) subdirectories to learn more about the winning solutions from each track.
+
+**["Meet the winners" blog post.](https://drivendata.co/blog/nasa-airathon-winners)**

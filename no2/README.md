@@ -12,7 +12,7 @@ The goal of this track of the competition was to use remote sensing data and oth
 
 ## What's in this Repository
 
-This repository contains code from winning competitors in the [NASA Airathon: Predict Air Quality - Track Gas Track](https://www.drivendata.org/competitions/91/competition-air-quality-no2/) DrivenData challenge.
+This repository contains code from winning competitors in the [NASA Airathon: Predict Air Quality - Track Gas Track](https://www.drivendata.org/competitions/91/competition-air-quality-no2/) DrivenData challenge. Code for all winning solutions are open source under the MIT License.
 
 **Winning code for other DrivenData competitions is available in the [competition-winners repository](https://github.com/drivendataorg/competition-winners).**
 
