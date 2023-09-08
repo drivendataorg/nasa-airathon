@@ -1,0 +1,3 @@
+[submodule "pm25/3rd Place/nbs/rda-apps-clients"]
+	path = pm25/3rd Place/nbs/rda-apps-clients
+	url = https://github.com/NCAR/rda-apps-clients.git
